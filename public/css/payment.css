@@ -1,0 +1,63 @@
+.payment_container{
+	position: relative;margin-top: 70px;width: auto;height: 95%;
+	/*border: 1px solid #8A8A8A;*/
+}
+.payment_qt label~input{
+	position: absolute;top: 60%;left: 10%;width: 80%;	border: 1px solid #8A8A8A;
+}
+#price{
+	position: absolute;width: 150px;height: 45px;left:30%;bottom:6%;
+	border-radius: 6px;color: #FFFFFF;background-color: #FF4040;
+}
+.payment_beizhu p{
+	position: absolute;top:50%;left: 10%;color: #333333;
+}
+.payment_beizhu font{font-weight:bold;}
+
+.mui-bar{background-color: #ff4040;}
+
+.mui-title{color: #FFFFFF;}
+
+
+#pay_yonghu{
+	position: absolute;width: 100%;height: 10%;top:5%;
+	/*border: 1px solid #8A8A8A;*/
+}
+
+#pay_yonghu span:first-child{margin-top: 10px;margin-left: 12%;color: #333333;/*border: 1px solid #8A8A8A;*/}
+
+#pay_yonghu span:nth-of-type(2){margin-top: 10px;margin-left: 0%;color: #333333;/*border: 1px solid #8A8A8A;*/}
+
+
+#pay_jin{
+	position: absolute;width: 100%;height: 60%;top:12%;	/*border: 1px solid #8A8A8A;*/
+}
+
+#pay_jin span{position: absolute;margin-top: 13px;margin-left: 35px;}
+
+.money_1{
+	position: absolute;width: 110px;height: 50px;margin-top: 20px;
+	margin-left: 10%;border-radius:10px;border: 1px solid #BBBBBB;
+}
+.money_1 span{position: absolute;margin-top: 13px;left: 6%;}
+
+.money_10{
+	position: absolute;width: 110px;height: 50px;margin-top: 20px;
+	margin-left: 55%;border-radius:10px;border: 1px solid #BBBBBB;
+}
+.money_10 span{position: absolute;margin-top: 13px;left: 1%;}
+
+.money_50{
+	position: absolute;width: 110px;height: 50px;margin-top: 100px;
+	margin-left: 10%;border-radius:10px;border: 1px solid #BBBBBB;
+}
+.money_50 span{position: absolute;margin-top: 13px;left: 3%;}
+
+.money_100{
+	position: absolute;width: 110px;height: 50px;margin-top: 100px;
+	margin-left: 55%;border-radius:10px;border: 1px solid #BBBBBB;
+}
+
+.money_100 span{position: absolute;margin-top: 13px;margin-left: 35px;}
+
+#fh{color: #FFFFFF;}

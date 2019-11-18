@@ -1,0 +1,291 @@
+/*主体盒子*/
+.sryxBody{
+	width:100%;						
+	height: 667px;
+	background-size:cover;
+	background-image: url(../image/bg3.png) ;
+	background-repeat:no-repeat;
+	/*background: red;*/
+	position: relative;
+	overflow: scroll;
+}
+/*头像图片*/
+.touxiang{
+	background-image: url(/h5/public/image/mui_01.png) ;
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: relative;
+	z-index: 98;
+	top: 1%;
+	left: 0%;
+	width: 55%;
+	height: 11%;
+	/*border: 1px solid #000000;*/
+}
+
+.touxiang img{
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;
+	width: 30%;
+	height: 72%;
+	top: 13%;
+	left: 3%;
+}
+
+.touxiang span:nth-of-type(1){
+	position: absolute;
+	left: 32%;
+	top:12%;
+	font-size: 13px;
+}
+
+.touxiang span:nth-of-type(2){
+	position: absolute;
+	left: 50%;
+	top:52%;
+	color: #FFFFFF;
+}
+
+/*头像div结束*/
+
+
+/*玩法规则图片*/   	
+.fgTitle{
+	width: 50%;
+	height: 100px;
+	margin-top: 0%;
+	position: absolute; 
+	z-index: 98;
+	top: 8px;
+	left: 0%;
+}
+.fgTitle a:after{display: block;content:"";clear: both;overflow: hidden;}
+.fgTitleEsc{
+	position: absolute;
+	z-index: 98;
+	top: 8px;
+	right: 0%;
+	width: 50%;
+	height: 100px;
+}
+/*从下弹起的div*/ 
+#tanchu{ 
+	position: fixed; 
+	z-index:98;
+	background: url(/h5/public/image/murder_gz_bj.png) no-repeat;
+	background-size:100%;	  		
+	bottom:0px;
+	left: 0%;
+	width: 100%;
+	height: 83%;
+	display:none; 		
+}
+
+/*叉叉图片*/
+#chachatupian{
+	background: url(/h5/public/image/g3_b24.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;   		
+	top: 1%;
+	right: 5%;
+	width: 15%;
+	height: 15%;
+}  
+/*----------等待法官操作界面---------------------------*/
+.dd_contanir{
+	/*display: none;*/
+}
+.ddnull{
+	width: 100%;
+	height: 280px;
+	/*border: 1px solid #0062CC;*/
+}
+.ddFont{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	/*border: 1px solid #0062CC;*/
+}
+.ddFont span{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	font-size: 1.3rem;
+	font-weight:bold;
+	color: #000000;
+}
+/*----------等待法官操作界面-------------结束--------------*/
+
+/*----------法官端界面---------------------------*/
+.fg_contanir_1{
+	display: none;
+}
+.fg_contanir_2{
+	display: none;
+}
+.fg_contanir_3{
+	display: none;
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	/*left: 50%;*/
+	/*transform: translateX(-50%);*/
+}
+.fg_contanir_4{
+	display: none;
+}
+.fgTitle{
+
+	/*border: 1px solid #0062CC;*/
+}
+.fgAction{
+	width: 100%;
+	height: 116px;
+	margin-top: 65%;
+	text-align:center;
+	/*border: 1px solid #0062CC;*/
+}
+.fgAction2{
+	width: 100%;
+	height: 116px;
+	margin-top: 30%;
+	text-align:center;
+	/*border: 1px solid #0062CC;*/
+}
+.fgNext{
+	width: 100%;
+	height: 102px;
+	margin-top: 1%;
+	text-align:center;
+	/*border: 1px solid #0062CC;*/
+}	
+.fgFont{
+	width: 100%;
+	height: 102px;
+	margin-top: 1%;
+	text-align:center;
+	position: relative;
+	/*border: 1px solid #0062CC;*/
+}
+.fgFont span{
+	position: absolute;
+	top: 20%;
+	left: 38%;
+	font-weight: bold;
+	line-height: 30px;
+	color: #000000;
+}
+.fgJudge{
+	width: 100%;
+	height: 96px;
+	margin-top: 0%;
+	/*border: 1px solid #0062CC;*/
+}
+/*----------法官端界面-------------结束--------------*/
+
+/*----------警察端界面-------------开始--------------*/
+.jc_contanir{
+	display: none;
+}
+.jcnull{
+	width: 100%;
+	height: 220px;
+	/*border: 1px solid #0062CC;*/
+}
+.jcFont{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	/*border: 1px solid #0062CC;*/
+}
+.jcFont span{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	font-size: 1.3rem;
+	font-weight:bold;
+	color: #000000;
+}
+.jcOut{
+	width: 100%;
+	height: 119px;
+	text-align:center;
+}
+.jcJudge{
+	margin-top: 20%;
+}
+/*----------法官端界面-------------结束--------------*/
+
+/*----------良民端界面-------------开始--------------*/
+.lm_contanir{
+	display: none;
+}
+.lmnull{
+	width: 100%;
+	height: 220px;
+	/*border: 1px solid #0062CC;*/
+}
+.lmFont{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	/*border: 1px solid #0062CC;*/
+}
+.lmFont span{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	font-size: 1.3rem;
+	font-weight:bold;
+	color: #000000;
+}
+.lmOut{
+	width: 100%;
+	height: 119px;
+	text-align:center;
+}
+.lmJudge{
+	margin-top: 20%;
+}
+/*----------良民端界面-------------结束--------------*/
+
+/*----------杀手端界面-------------开始--------------*/
+.ss_contanir{
+	display: none;
+}
+.ssnull{
+	width: 100%;
+	height: 220px;
+	/*border: 1px solid #0062CC;*/
+}
+.ssFont{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	/*border: 1px solid #0062CC;*/
+}
+.ssFont span{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	font-size: 1.3rem;
+	font-weight:bold;
+	color: #000000;
+}
+.ssOut{
+	width: 100%;
+	height: 119px;
+	text-align:center;
+}
+.ssJudge{
+	margin-top: 20%;
+}
+/*----------杀手端界面-------------结束--------------*/
+
+/*----------游戏付费提示界面-------------开始--------------*/
+.payInfo{position: relative;}
+.infoText{position: absolute;top: 25%;width: 70%;font-size: 22px;color: red;font-weight: bold;text-align: center;left: 11%;}
+.payMoney{position: absolute;top: 20%;}
+.payBtn{text-align: center}
+/*----------游戏付费提示界面-------------结束--------------*/

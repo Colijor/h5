@@ -1,0 +1,58 @@
+.home_contanir{	
+	width: 100%;
+	height: 667px;
+	position: relative;
+	background-color: #FFFFFF;
+	/*border: 1px solid #007AFF;*/
+}
+#ho_tou{background-color: #FF4040;}
+
+#ho_mui-title{color: #FFFFFF;}
+
+.ho_biaozhi{
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	margin-top: 40px;
+	/*border: 1px solid #0062CC;*/
+}
+
+.ho_xuanzhe{
+	position: relative;width: 100%;height: 30%;top:0%;
+	/*border: 1px solid #CCCCCC;*/
+}
+
+.ho_xuanzhe img{
+	background-repeat:no-repeat;background-size:60%;
+	width: 30%;height: 50%;margin-top: 25px;margin-left: 30px;
+}
+
+.ho_sao{
+	position: absolute;width: 50%;height: 50%;
+	border: 1px solid #CCCCCC;cursor:pointer;
+}
+
+.ho_sao span{position: absolute;top:43%;left: 55%;}
+
+.ho_ping{
+	position: absolute;width: 50%;height: 50%;right: 0%;
+	border: 1px solid #CCCCCC;cursor:pointer;
+}
+
+.ho_ping span{position: absolute;top:43%;left: 55%;}
+
+.ho_chong{
+	position: absolute;width: 50%;height: 50%;top:50%;
+	border: 1px solid #CCCCCC;cursor:pointer;
+}
+
+.ho_chong span{position: absolute;top:43%;left: 55%;}
+
+.ho_ge{
+	position: absolute;width: 50%;height: 50%;right: 0%;top:50%;
+	border: 1px solid #CCCCCC;cursor:pointer;
+}
+
+.ho_ge span{position: absolute;top:43%;left: 55%;}
+
+

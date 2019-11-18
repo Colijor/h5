@@ -1,0 +1,677 @@
+/*轮盘首页界面---开始*/
+body {}
+.word_num{
+    color: white;
+    font-size:0.3rem;
+    font-weight: bolder;
+    flex: 2;
+    text-align: center;
+    line-height: 63px;
+    margin-left: -5px;
+}
+.word_box{margin-top: 3px;overflow: scroll;height: 100%;width: 100%;}
+.word{display: flex;background: url("/h5/public/image/roulette/g1_09.png")no-repeat;background-size: 100% 61px;border-radius: 5px;margin-bottom: 5px;}
+.word_main{display: inline-block;flex: 9;}
+.keywords{color: red;font-size:0.3rem;font-weight: bolder;}
+.state{color: black;font-weight: bolder;font-size:0.2rem;}
+.modify_box{flex: 2;}
+.modify{color: white;background:url("/h5/public/image/roulette/modify.png")no-repeat;display: inline-block;border-radius: 3px;margin: 5px 5px 0 0px;width:1rem;height: 0.75rem;font-size:0.1rem;background-size: 100% 100%}
+.title{width: 82%;margin: 0 auto;padding-top: 8%;}
+.title img{width: 100%;max-width: 100%;min-width: 100%;}
+.tx{width: 90%;margin: 0 auto;height: 72%;}
+.gameBtn{text-align: center;margin-top: 20px;}
+.gameBtn a img{width: 30%;}
+
+/*主体盒子*/
+#container_lp {
+    width: 100%;
+    height: 100%!important;
+    margin: 0 auto;
+    background: url(/h5/public/image/roulette/g1_bg.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow:hidden;
+}
+
+/*头像图片*/
+.touxiang {
+    background-image: url(/h5/public/image/roulette/mui_01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index: 9999999;
+    top: 1%;
+    left: 0%;
+    width: 55%;
+    height: 11%;
+    /*border: 1px solid #000000;*/
+}
+
+.touxiang img {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 30%;
+    height: 72%;
+    top: 13%;
+    left: 3%;
+    border-radius: 100px;
+}
+
+.touxiang span:nth-of-type(1) {
+    position: absolute;
+    left: 32%;
+    top: 12%;
+    font-size: 13px;
+}
+
+.touxiang span:nth-of-type(2) {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    color: #FFFFFF;
+}
+
+/*头像div结束*/
+/*游戏规则*/
+#container_lp .youxiguize {
+    position: absolute;
+    top: 5%;
+    right: -8%;
+}
+
+.bgg1 {
+    background: url(/h5/public/image/roulette/g3_b11.png) no-repeat;
+    background-size: 80%;
+    width: 40%;
+    height: 10%;
+}
+
+.bgg2 {
+    background: url(/h5/public/image/roulette/g3_b11.png) no-repeat;
+    background-size: 80%;
+    width: 35%;
+    height: 10%;
+}
+
+/*操作说明图片*/
+#container_lp .caozuoshuoming {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+.bg1 {
+    background: url(/h5/public/image/roulette/g1_14.png) no-repeat;
+    background-size: 80%;
+    width: 40%;
+    height: 10%;
+}
+
+.bg2 {
+    background: url(/h5/public/image/roulette/g1_14.png) no-repeat;
+    background-size: 80%;
+    width: 35%;
+    height: 10%;
+}
+
+/*中间按钮图片*/
+#container_lp .anniu {
+    display: block;
+    background: url(/h5/public/image/roulette/g2_03.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 68%;
+    height: 46%;
+}
+
+/*遮罩*/
+#container_lp #fullbg {
+    background-color: gray;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+#container_lp #dialog {
+    width: 80%;
+    height: 15%;
+    background-image: url(/h5/public/image/roulette/g2_08.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 12%;
+    top: 45%;
+    z-index: 20;
+    margin-left: 0%;
+    display: none;
+    /*border: 1px solid #000000;*/
+}
+
+/*叉叉图片*/
+#container_lp #dialog #chachatupian {
+    background: url(/h5/public/image/roulette/g1_b10.png) no-repeat;
+    background-size: 100%;
+    width: 11%;
+    height: 38%;
+    margin-left: 88%;
+    margin-top: 0%;
+    text-decoration: none;
+}
+
+#container_lp #dialog p {
+    /*position: absolute;
+    top: 18%;
+    left: 13%;*/
+    margin-top: 8%;
+    margin-left: 13%;
+    font-family: "microsoft yahei", 微软雅黑, 宋体;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 1);
+    font-style: italic;
+}
+
+/*等待其他玩家*/
+#button_dd {
+    position: absolute;
+    background-color: #888888;
+    border-radius: 10px;
+    width: 50%;
+    height: 7%;
+    bottom: 28%;
+    left: 23%;
+    display: none;
+}
+
+/*点赞*/
+#button_dz {
+    position: absolute;
+    border-radius: 10px;
+    width: 50%;
+    height: 7%;
+    bottom: 28%;
+    left: 23%;
+    display: none;
+}
+
+.button_dz_bg1 {
+    background-color: #00CCFF;
+}
+
+.button_dz_bg2 {
+    background-color: #888888;
+}
+
+/*轮盘首页界面--结束*/
+
+/*操作说明界面---开始*/
+
+/*主体盒子*/
+#container_czsm {
+    width: 100%;
+    max-width: 640px; /*设计图的原因 不让它放大*/
+    min-width: 300px; /*为了更好的布局*/
+    margin: 0 auto;
+    height: 667px;
+    background: url(../image/roulette/g1_bg.jpg) no-repeat;
+    /*background: red;*/
+    position: relative;
+    display: none;
+}
+
+/*规则说明，操作说明图片*/
+.guizeshuoming {
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: absolute;
+    left: 22%;
+    top: 1%;
+    width: 50%;
+    height: 10%;
+}
+
+#guize p {
+    position: absolute;
+    font-family: "microsoft yahei", 微软雅黑, 宋体;
+    font-weight: bold;
+    color: rgba(60, 60, 60, 1);
+    top: 12%;
+    left: 4%;
+    letter-spacing: 2px;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+/*当前使用游戏规则图片*/
+.guize2 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 10%;
+    top: 42%;
+    width: 64%;
+    height: 16%;
+}
+
+/*当前使用游戏规则图片下的p元素*/
+#guize1 p {
+    position: absolute;
+    font-family: "microsoft yahei", 微软雅黑, 宋体;
+    font-weight: bold;
+    color: rgba(60, 60, 60, 1);
+    bottom: 0%;
+    left: 4%;
+    overflow: scroll;
+    letter-spacing: 2px;
+    font-size: 80%;
+    line-height: 18px;
+    height: 300px;
+}
+
+/*返回图标*/
+.container_czsm_fanhui {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    width: 13%;
+    height: 9%;
+}
+
+/*操作说明界面--结束*/
+
+/*游戏规则界面---开始*/
+
+/*主体盒子*/
+#container_yxgz {
+    width: 100%;
+    height: 100%!important;
+    background: url(/h5/public/image/roulette/g1_bg.jpg) no-repeat;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 360px) {
+    #container_yxgz > #kuangkuang {
+        width: 94%;
+        background-image: url(../image/roulette/g1_11.png);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        height:375px;
+        margin: -12px auto 0;
+    }
+    #container_yxgz > #container_yxgz_fanhui {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        margin-top: 415px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 3;
+    }
+    .content1 {width: 76%;margin: 0 auto;height: 80%;overflow: scroll;}
+    #blankT{width: 100%;height: 41px;}
+}
+
+/*框框图片*/
+@media only screen and (min-width: 361px) {
+    #container_yxgz > #kuangkuang {
+        width: 94%;
+        background-image: url(../image/roulette/g1_11.png);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        height: 65%;
+        margin: -12px auto 0;
+    }
+    #container_yxgz > #container_yxgz_fanhui {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        margin-top: 550px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 3;
+    }
+    .content1{width: 76%;margin: 0 auto;height:80%;overflow: scroll;}
+    #blankT{width: 100%;height: 12%;}
+}
+
+/*店家推荐*/
+#djtj {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 2px;
+}
+
+/*当前选中*/
+#dq {
+    margin-top: -109%;
+    margin-left: 30%;
+    display: none;
+}
+
+/*三个按键 下的元素设置*/
+#container_yxgz > #title {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*ul 下的第一个li*/
+#container_yxgz #title #tag1 {
+    background: url(/h5/public/image/roulette/g1_b04.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 35%;
+    height: 100%;
+}
+
+/*ul 下的第二个li*/
+#container_yxgz #title #tag2 {
+    background: url(/h5/public/image/roulette/g1_b05_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    position: absolute;
+    top: 0%;
+    left: 32%;
+    width: 35%;
+    height: 100%;
+}
+
+/*ul 下的第三个li*/
+#container_yxgz #title #tag3 {
+    background: url(/h5/public/image/roulette/g1_b06_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    position: absolute;
+    top: 0%;
+    left: 65%;
+    width: 35%;
+    height: 100%;
+}
+
+/*内容区的样式*/
+#container_yxgz > #content > #content1 {
+    position: absolute;
+    z-index: 4;
+    width: 73%;
+    height: 54%;
+    left: 12%;
+    top: 14.5%;
+    min-height: 54%;
+    max-height: 54%;
+    overflow: hidden;
+    /*overflow-x:auto;*/
+    overflow: auto; /*隐藏超出的内容*/
+    border-radius: 10px;
+    font-size: 14px;
+
+}
+
+#content1 ul {
+    background: url(/h5/public/image/roulette/g1_09.jpg) no-repeat;
+    background-size: 150%;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+
+}
+
+#content1 ul li {
+    list-style-type: none; /*去掉序列小圆点*/
+    line-height: 25px;
+    margin-left: 18%;
+}
+
+#container_yxgz > #content > #content2 {
+    position: absolute;
+    z-index: 4;
+    width: 73%;
+    height: 54%;
+    left: 12%;
+    top: 14.5%;
+    background-color: #C0D59F;
+    min-height: 54%;
+    max-height: 54%;
+    overflow: hidden;
+    /*overflow-x:auto;*/
+    overflow: auto; /*隐藏超出的内容*/
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.content2_bg1 {
+    background: url(/h5/public/image/roulette/g1_09.jpg) no-repeat;
+    background-size: 150%;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+.content2_bg2 {
+    background: url(/h5/public/image/roulette/g1_09_1.png) no-repeat;
+    background-size: 150%;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+#content2 ul li {
+    list-style-type: none; /*去掉序列小圆点*/
+    line-height: 25px;
+    margin-left: 18%;
+}
+
+#container_yxgz > #content > #content3 {
+    position: absolute;
+    z-index: 4;
+    width: 73%;
+    height: 54%;
+    left: 12%;
+    top: 14.5%;
+    background-color: #C0D59F;
+    min-height: 54%;
+    max-height: 54%;
+    overflow: hidden;
+    /*overflow-x:auto;*/
+    overflow: auto; /*隐藏超出的内容*/
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#content3 ul {
+    background: url(/h5/public/image/roulette/g1_09.jpg) no-repeat;
+    background-size: 150%;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+#content3 ul li {
+    list-style-type: none; /*去掉序列小圆点*/
+    line-height: 25px;
+    margin-left: 18%;
+}
+
+.hidecontent {
+    display: none;
+}
+
+/*取消选择按钮*/
+#container_yxgz #qxxz {
+    background: url(/h5/public/image/roulette/g1_b03.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 11%;
+    width: 24%;
+    height: 12%;
+    display: none;
+}
+
+/*确定选择按钮*/
+#container_yxgz #qdan {
+    background: url(/h5/public/image/roulette/g1_b02.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 30%;
+    bottom: 11%;
+    width: 24%;
+    height: 12%;
+    display: none;
+}
+
+/*默认词条按钮*/
+/*#container_yxgz #mrct{*/
+/*background: url(/h5/public/image/mrct_0.png);*/
+/*background-repeat:no-repeat;*/
+/*background-size:100%;*/
+/*position: absolute;*/
+/*left:30%;*/
+/*bottom: 11%;*/
+/*width:24%;*/
+/*height:12%;*/
+/*}*/
+
+/*提交按钮*/
+/*#container_yxgz #tjan{*/
+/*background: url(/h5/public/image/tjan_0.png);*/
+/*background-repeat:no-repeat;*/
+/*background-size:100%;*/
+/*position: absolute;*/
+/*left:60%;*/
+/*bottom: 11%;*/
+/*width:24%;*/
+/*height:12%;*/
+/*}*/
+
+/*添加词条按钮*/
+#container_yxgz #tjct {
+    background: url(/h5/public/image/roulette/g1_b06_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 34%;
+    bottom: 15%;
+    width: 30%;
+    height: 9%;
+    display: none;
+}
+
+/*遮罩*/
+#container_yxgz #ysgz_fullbg {
+    background-color: gray;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    /*filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity:0.5; */
+}
+.modifydown{background: url(/h5/public/image/roulette/modifyDowm.png)no-repeat!important;}
+
+/*浮动窗口*/
+#container_yxgz #ysgz_dialog {
+    background:url(/h5/public/image/roulette/g1_10.png) no-repeat;
+    background-size:100%;
+    position: absolute !important; /* 浮动对话框 */
+    z-index:20;
+    top:0;
+    width: 90%;
+    height:258px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+/*叉叉图片*/
+#container_yxgz #ysgz_dialog #chachatupian {
+    background: url(/h5/public/image/roulette/g1_b10.png) no-repeat;
+    background-size: 100%;
+    width: 11%;
+    height: 16%;
+    margin-left: 82%;
+    margin-top: 16%;
+    text-decoration: none;
+}
+
+/*input框   标题样式*/
+#container_yxgz #ysgz_dialog #name {
+    background: #7D5740;
+    background-size: 90%;
+    width: 60%;
+    height: 7%;
+    margin-top: 2%;
+    margin-left: 8%;
+    border-radius: 5px;
+}
+
+/*input框    内容样式*/
+#container_yxgz #ysgz_dialog #neirong {
+    background: #7D5740;
+    background-size: 90%;
+    width: 76%;
+    height: 7%;
+    margin-top: 12%;
+    margin-left: 8%;
+    border-radius: 5px;
+}
+
+/*让input标签的placeholder属性里的值添加颜色*/
+::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+::-moz-placeholder {
+    color: #FFFFFF;
+}
+
+:-moz-placeholder {
+    color: #FFFFFF;
+}
+
+/*让input标签的placeholder属性里的值左右居中*/
+::-webkit-input-placeholder {
+    text-align: left;
+    padding-top: 1px;
+}
+
+/*提交按钮图片*/
+#container_yxgz #ysgz_dialog #submit {
+    width: 35%;
+    height: 15%;
+    margin-top: 11%;
+    margin-left: 28%;
+    position: relative;
+}
+
+/*游戏规则界面---结束*/
+#accountNum{display: inline-block;position: absolute;top: 5%;right: 22%;color: white;font-size: 12px;}
+#fresh{}
+.ftImg{width: 2rem}
+#ft a{display: inline-block}
+#ft{display: flex;justify-content: space-around;padding-top: 0.5rem;}
+.escGame{position: absolute;bottom: 10%;left: 50%;transform: translateX(-50%);text-align: center;}
+.escGame img{width: 2.5rem;}
+.countdownBox{position: absolute;top: 0.49rem;left: 50%;transform: translateX(-50%);}
+#countdown{font-size: 12px;}

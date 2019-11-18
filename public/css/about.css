@@ -1,0 +1,45 @@
+.about_contanir{
+	position: relative;
+	margin-top: 43px;
+	width: auto;
+	height: 100%;
+	background-color: #FFFFFF;
+	/*border: 1px solid #8A8A8A;*/
+}
+
+.mui-bar{background-color: #FF4040;}
+
+.mui-bar a{color: #FFFFFF;}
+
+#ab_mui-title{color: #FFFFFF;}
+
+.ab_biaozhi{
+	background: url(../image/icon_logo_240.png) no-repeat;
+	background-size:100%;position: absolute;width: 50%;
+	height: 30%;top:3%;left: 25%;
+}
+.ab_lianxi{
+	position: absolute;width: 80%;height: 10%;
+	top:32%;left: 10%;color: #333333;
+}
+
+.ab_lianxi span:first-child{position: absolute;top:5%;left: 20%;}
+
+.ab_lianxi span:nth-of-type(2){position: absolute;top:60%;left: 20%;}
+
+.ab_saosao{
+	position: relative;width: 80%;height: 36%;top:45%;left: 10%;
+}
+
+.ab_saosao p{position: absolute;width: 50%;height: 10%;top:2%;
+	left: 25%;color: #808080;border: 1px solid #FFFFFF;}
+
+.ab_tu{
+	background: url(../image/u292.jpg) no-repeat;background-size:80%;
+	position: absolute;width: 50%;height: 60%;top:20%;left: 28%;
+}
+
+.ab_saosao span{
+	font-size: 14px;position: absolute;bottom: 0%;left: 1%;color: #808080;
+}
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>轮盘首页</title>
+
+    <link rel="stylesheet" type="text/css" href="/h5/public/css/base.css"/>
+
+    <link rel="stylesheet" type="text/css" href="/h5/public/css/game_lp.css"/>
+
+
+</head>
+
+<body>
+
+<!--轮盘首页界面-------------------------------------------------->
+
+<div id="container_lp">
+
+    <!--头像-->
+
+    <!--<div class="touxiang">-->
+
+        <!--<a href="/h5/personal_Center.html"><img src="/h5/public/image/roulette/u116.png"></a>-->
+
+        <!--<span></span>-->
+
+        <!--<span></span>-->
+
+    <!--</div>-->
+
+    <!--中间按钮图片-->
+
+    <!--<div class="">-->
+
+        <a href="javascript:WebSocketTest('power')" class="anniu" onclick="showBg();"></a>
+
+    <!--</div>-->
+
+    <!--遮罩-->
+
+    <div id="fullbg"></div>
+
+    <!--弹出提示语-->
+
+    <div id="dialog">
+
+        <p>请看大屏幕提示</p>
+
+    </div>
+
+    <!--操作说明-->
+
+    <div>
+
+        <a href="javascript:void(0)" class="caozuoshuoming"></a>
+
+    </div>
+
+    <!--游戏规则-->
+
+    <div>
+
+        <a href="javascript:void(0)" class="youxiguize"></a>
+
+    </div>
+    <!--等待其他玩家按钮-->
+
+    <button type="button" id="button_dd">等待其他玩家</button>
+
+    <!--为别人点赞-->
+
+    <button id="button_dz">为“<span id="yonghuming"></span>”玩家点赞 <span id="thumbsUp" class="countDown">倒计时</span></button>
+
+    <div class="escGame">
+        <div><img src="/h5/public/image/roulette/escGame.png" id="escGameBtn"></div>
+        <span id="countdown" class="countdownBox countDown">倒计时</span>
+    </div>
+
+</div>
+
+<!--轮盘首页界面-------------------------结束------------------------->
+
+
+<!--操作说明界面-------------------------------------------------->
+
+<div id="container_czsm">
+
+    <div id="guize">
+
+        <img src="/h5/public/image/roulette/g1_12.png" class="guizeshuoming">
+
+        <a href="javascript:void(0)"><img src="/h5/public/image/roulette/g1_b09.png" class="container_czsm_fanhui"></a>
+
+        <p>
+
+            <!--规则说明，操作说明图片-->
+
+            1、参与的玩家可以随意使用控制轮盘<br>
+
+            2、轮盘启动后将会从12个词里面随机抽取1个<br>
+
+            3、电视机会展示结果<br>
+
+            4、使用轮盘的玩家必须要按摇出来的结果做相应的行为动作<br>
+
+            5、现场参与的其他玩家通过手机“点赞”操作来支持<br>
+
+            6、当轮盘玩家获得现场60%以上的点赞，就可以过关<br>
+
+            7、游戏继续下一场，除了刚才操作轮盘的玩家外<br>
+
+            其他人可以抢摇轮盘<br>
+
+            8、当现场的所有参与者都参与过一轮后，
+
+            游戏重新开始<br>
+
+    </div>
+
+    <div id="guize1">
+
+        <!--当前使用游戏规则图片-->
+
+        <img src="/h5/public/image/roulette/g1_13.png" class="guize2">
+
+        <p>
+
+            1、自饮<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;自己喝一杯<br>
+
+            2、罚酒<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;罚他人喝酒一杯，需要讲出合理的理由<br>
+
+            3、求救<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;可找人帮忙完成三杯酒的任务<br>
+
+            4、交杯<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;表演交杯饮酒，各一杯<br>
+
+            5、三人一起喝<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;邀请至少三人一起喝酒，各喝一杯<br>
+
+            6、全体喝<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;邀请全体各饮酒一杯<br>
+
+            7、敬酒<br>
+
+                    向他人敬酒，可多人，自定酒量
+
+        </p>
+
+    </div>
+
+</div>
+
+<!--操作说明界面------------------------结束-------------------------->
+
+
+<!--游戏规则界面------------------------------>
+
+<div id="container_yxgz">
+
+    <!--正在使用的词库-->
+    <div id="title">
+        <img src="/h5/public/image/roulette/usedWords.png" width="100%">
+    </div>
+
+    <!--内容区-->
+    <div id="kuangkuang">
+        <div id="blankT"></div>
+        <div id="content" class="content1">
+            <div id="content1">
+                <div class="word_box" id="word_box">
+                    <!--<div class="word">-->
+                        <!--<span class="word_num">1</span>-->
+                        <!--<div class="word_main">-->
+                            <!--<span class="keywords">自饮</span>-->
+                            <!--<br>-->
+                            <!--<span class="state">自己饮酒三杯自己饮酒三杯自己饮酒三杯自己</span>-->
+                        <!--</div>-->
+                        <!--<div class="modify_box">-->
+                            <!--<div class="modify" onclick="ysgz_showBg();"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="ft">
+        <a href="javascript:void(0)" id="container_yxgz_fanhui"><img src="/h5/public/image/roulette/onGame0.png" id="back" class="ftImg"></a><!--返回图片-->
+        <a href="javascript:void(0)" id="fresh"><img src="/h5/public/image/roulette/refresh.png" id="refresh"  class="ftImg"></a> <!--刷新按钮-->
+    </footer>
+
+    <!--修改词条按钮-->
+
+    <input type="button" id="tjct" onclick="ysgz_showBg();">
+    <div id="ysgz_fullbg"></div>
+    <div id="ysgz_dialog">
+
+        <input type="button" id="chachatupian" onclick="ysgz_closeBg();">
+
+        <input type="text" name="name" id="name" maxlength="8" required placeholder="标题8个字" onfocus="this.placeholder=''" onblur="this.placeholder='标题8个字'"/>
+
+        <input type="text" name="neirong" id="neirong" maxlength="15" required placeholder="内容不能超过15个字" onfocus="this.placeholder=''" onblur="this.placeholder='内容不能超过15个字'"/>
+
+        <!--<input type="button" id="submit" value="">-->
+        <div id="submit" onclick="modifyBtn();">
+            <img src="/h5/public/image/roulette/submitBtn0.png" width="100%">
+            <span id="accountNum">0.01</span>
+        </div>
+
+    </div>
+</div>
+
+    <!--游戏规则界面-----------------结束------------->
+<script src="/h5/public/js/jquery.min.js"></script>
+<!--common.js里面是放的苹果手机，安卓手机的适配样式-->
+<script src="/h5/public/js/common.js"></script>
+<script src="/h5/public/js/public.js"></script>
+<script src="/h5/public/js/public_login.js"></script>
+<script src="/h5/public/protobuf/protobuf.js"></script>
+<script src="/h5/public/js/game_lp.js"></script>
+<script src="/h5/public/js/flexible.min.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+
+
+</body>
+
+</html>

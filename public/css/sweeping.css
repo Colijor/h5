@@ -1,0 +1,14 @@
+.sw_content{
+	position: relative;
+	margin-top: 43px;
+	width: auto;
+	height: 100%;
+	background-color: #FAFAFA;
+	/*border: 1px solid #8A8A8A;*/
+}
+
+#sw_tou{background-color: #FF4040;}
+
+#sw_fh{color: #FAFAFA;}
+
+#sw_mui-title{color: #FAFAFA;}

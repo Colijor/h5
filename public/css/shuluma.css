@@ -1,0 +1,27 @@
+.shuluma_contanir{
+	width: 100%;height: 667px;position: relative;background-color: #FAFAFA;
+	/*border: 1px solid #8A8A8A;*/
+}
+
+#shu_tou{background-color: #FF4040;}
+
+#shu_fh{color: #FAFAFA;}
+
+#shu_mui-title{color: #FAFAFA;}
+
+.shu_nei{
+	width: 100%;height: 40%;top:10%;position: relative;
+	/*border: 1px solid #8A8A8A;*/
+}
+
+.shu_nei span{margin-left: 20px;font-size: 15px;}
+
+.shu_nei input{
+	position: absolute;top:21%;width: 60%;left: 18%;height: 11%;
+	/*border: 2px solid #B6FF00; */
+}
+
+#go{
+	position: absolute;top:50%;width: 40%;left:30%;height: 12%;border-radius:8px;color: #FAFAFA;
+	background-color: #FF4040;
+}

@@ -1,0 +1,726 @@
+/*头部css---开始*/
+#container_xn{
+	width:100%;margin:0 auto;height: 667px;
+	background: url(/h5/public/image/backG1.png) no-repeat;
+	background-repeat:no-repeat;background-size:cover;position: relative;
+	
+}
+/*头像图片*/
+.touxiang{
+	background-image: url(/h5/public/image/mui_01.png) ;
+	background-repeat:no-repeat;background-size:100%;position: relative;z-index: 9999999;
+	top: 1%;left: 0%;width: 55%;height: 11%;
+	/*border: 1px solid #000000;*/
+}
+
+.touxiang img{
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;
+	width: 30%;
+	height: 72%;
+	top: 13%;
+	left: 3%;
+}
+
+.touxiang span:nth-of-type(1){
+	position: absolute;
+	left: 32%;
+	top:12%;
+	font-size: 13px;
+}
+
+.touxiang span:nth-of-type(2){
+	position: absolute;
+	left: 50%;
+	top:52%;
+	color: #FFFFFF;
+}
+
+/*头像div结束*/
+
+/*游戏规则*/	
+.youxiguize{   		
+	/*background-image: url(image/g3_b11.png) ;*/
+	background-repeat:no-repeat;
+	background-size:80%;
+	position: absolute;   		
+	top: 12%;
+	right: 0%;
+	width: 25%;
+	height: 8%;
+}
+/*遮罩*/
+#fullbg { 
+	background-color:gray; 
+	left:0; 
+	opacity:0.6; 
+	position:absolute; 
+	top:0; 
+	z-index:9;
+}
+/*遮罩层里面大的div*/ 
+#fullbg_main{
+	display: none;
+}
+/*<!--这里显示比赛时间图片-->*/
+#fullbg_bssj{
+	background: url(/h5/public/image/g3_Help1.png) no-repeat;
+	background-size: 60%;
+	position: absolute;
+	width: 80%;
+	height: 10%;
+	z-index:999;
+	top:9%;
+	left:12%;
+}
+/*<!--这里显示小鸟的赔率-->*/
+#fullbg_pl{
+	background: url(/h5/public/image/g3_Help1_1.png) no-repeat;
+	background-size: 60%;
+	position: absolute;
+	width: 80%;
+	height: 30%;
+	z-index:999;
+	top:25%;
+	left:5%;
+}
+/*<!--这里显示投注的小鸟-->*/
+#fullbg_tzxn{
+	background: url(/h5/public/image/g3_Help2.png) no-repeat;
+	background-size: 60%;
+	position: absolute;
+	width: 80%;
+	height: 30%;
+	z-index:999;
+	top:45%;
+	left:7%;
+}
+/*<!--这里显示确定下注-->*/
+#fullbg_qdxz{
+	background: url(/h5/public/image/g3_Help3.png) no-repeat;
+	background-size: 40%;
+	position: absolute;
+	width: 80%;
+	height: 30%;
+	z-index:999;
+	top:70%;
+	left:48%;
+}
+/*<!--这里显示确定投注前可以取消选择的项目-->*/
+#fullbg_qxxz{
+	background: url(/h5/public/image/g3_Help3_1.png) no-repeat;
+	background-size: 40%;
+	position: absolute;
+	width: 80%;
+	height: 30%;
+	z-index:999;
+	top:70%;
+	left:0%;
+}
+/*<!--这里显示跳过-->*/
+#fullbg_tg{
+	background: url(/h5/public/image/RMB_add03.png) no-repeat;
+	background-size: 40%;
+	position: absolute;
+	width: 40%;
+	height: 25%;
+	z-index:999;
+	top:3%;
+	left:80%;
+}
+  	
+/*从下弹起的div*/ 
+#div1{   		
+	position:absolute;
+	z-index: 9999;
+	bottom:0px;
+	display:none;
+	width:100%;
+	height:60%;
+}
+/*比赛记录图片*/   	
+#bisaijilu{
+	background-repeat:no-repeat;
+	background-size:80%;
+	position: absolute; 
+	z-index: 9999;  		
+	top: 15%;
+	left: 0%;
+	width: 27%;
+	height: 8%;
+}
+/*提示背景图*/
+#tanqi{
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;   		
+	top: -40%;
+	left: 0%;
+	width: 100%;
+	height: 135%;
+}
+/*叉叉图片*/
+#chachatupian{
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;   		
+	top: -40%;
+	right: 6%;
+	width: 10%;
+	height: 10%;
+}
+
+/*比赛记录的值*/
+#bsjl_value{
+	position: absolute;
+	width:90%;
+	height: 110%;
+	left: 5%;
+	top:-28%;
+	max-height: 110%;
+	overflow:hidden;
+	overflow: auto; /*隐藏超出的内容*/
+}
+#bsjl_value table{
+	width:100%;	
+	max-height: 110%;
+	overflow:hidden;
+	overflow: auto; /*隐藏超出的内容*/
+}
+
+#bsjl_value table td{
+	width: 25%;
+	height: 50px;	
+}
+#bsjl_value .tx{
+	background: url(/h5/public/image/g3_b01.png) no-repeat;
+	background-size:80%;
+	width: 25%;	
+}
+#bsjl_value .tx1{
+	background: url(/h5/public/image/g3_b02.png) no-repeat;
+	background-size:80%;
+	width: 25%;	
+}
+
+/*卢卡头像*/
+.tx_bg1{
+	background: url(/h5/public/image/g3_b01.png) no-repeat;
+	background-size:70%;
+	width: 25%;	
+}
+/*斯特拉头像*/
+.tx_bg2{
+	background: url(/h5/public/image/g3_b02.png) no-repeat;
+	background-size:70%;
+	width: 25%;	
+}
+/*大丽花头像*/
+.tx_bg3{
+	background: url(/h5/public/image/g3_b03.png) no-repeat;
+	background-size:70%;
+	width: 25%;	
+}
+/*薇露头像*/
+.tx_bg4{
+	background: url(/h5/public/image/g3_b04.png) no-repeat;
+	background-size:70%;
+	width: 25%;	
+}
+/*波皮头像*/
+.tx_bg5{
+	background: url(/h5/public/image/g3_b05.png) no-repeat;
+	background-size:70%;
+	width: 25%;	
+}
+/*高富头像*/
+.tx_bg6{
+	background: url(/h5/public/image/g3_b06.png) no-repeat;
+	background-size:70%;
+	width: 25%;	
+}
+
+
+
+/*头部css---结束*/
+
+/*第一个界面显示xn_content1-----开始*/
+#xn_content1{
+	/*display: none;*/
+}
+/*准备背景图片*/
+#zb_sj{
+	background: url(/h5/public/image/g3_b22.png) ;
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute; 
+	z-index: 1;   		
+	top: 8%;
+	left: 28%;
+	width: 60%;
+	height: 6%;
+}
+/*小猪图片*/
+#xiaozhu{
+	background: url(/h5/public/image/g3_b07.png) no-repeat;
+	background-size:100%;
+	position: absolute; 		  		
+	top: 30%;
+	left: 28%;
+	width: 40%;
+	height: 21%;
+}
+/*字体图片1*/
+#xn_content1_zhiti1{
+	background: url(/h5/public/image/g3_b23.png) no-repeat;
+	background-size:100%;
+	position: absolute; 	  		
+	top: 56%;
+	left: 25%;
+	width: 50%;
+	height: 50%;	
+}
+/*倒计时字体*/
+#daojishi{
+	position: absolute; 
+	top: 63%;
+	left: 45%;
+	color:#FFFFFF;
+	font-size: 2rem;
+}
+
+/*字体图片2*/
+#xn_content1_zhiti2{
+	background: url(/h5/public/image/go_1.png) no-repeat;
+	background-size:100%;
+	position: absolute; 	  		
+	bottom: 15%;
+	left: 0%;
+	width: 100%;
+	height: 10%;	
+}
+
+
+
+/*第二个界面显示xn_content2-----开始*/
+#xn_content2{
+	display: none;
+}
+/*比赛时间*/
+#shijian{
+	background: url(/h5/public/image/g3_b09.png) ;
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute; 
+	z-index: 1;   		
+	top: 4%;
+	left: 30%;
+	width: 60%;
+	height: 6%;
+}
+/*倒计时字体*/
+#xn_content2_daojishi{
+	position: absolute; 
+	top: 0%;
+	left: 75%;
+	color:#FFFFFF;
+	font-size: 2rem;
+}
+
+/*中间头像排序 ---最大的div*/
+#zjbjtp{
+	position: absolute; 
+	width:100%;
+	height: 55%;
+	/*border: 1px solid #000000;*/
+	top:22%;
+	left: 0%;	
+}
+#zjbjtp #luka_value,#sitela,#dalihua,#weilu,#bopi,#gaofu{			
+	color:#FFFFFF;
+	font-size: 1rem;
+}
+/*中间头像排序*/
+/*卢卡*/
+#zjbjtp #luka{
+	background: url(/h5/public/image/LUKA2.png) no-repeat;
+	background-size:100%;
+	width:30%;
+	height: 42%;
+	float: left;
+	margin-top:0;
+	margin-left:0;		
+}
+/*斯特拉*/
+#zjbjtp #sitela{
+	background: url(/h5/public/image/STL.png) no-repeat;
+	background-size:100%;
+	width:30%;
+	height: 42%;
+	float: right;
+	margin-top:0%;
+	margin-right:5% ;
+}
+/*大丽花*/
+#zjbjtp #dalihua{
+	background: url(/h5/public/image/DLH2.png) no-repeat;
+	background-size:100%;
+	width:30%;
+	height: 42%;
+	float: right;
+	margin-top:0%;
+	margin-right:0% ;
+}
+/*薇露*/
+#zjbjtp #weilu{
+	background: url(/h5/public/image/WL.png) no-repeat;
+	background-size:100%;
+	width:30%;
+	height: 42%;
+	float: right;
+	margin-top:8%;
+	margin-right:4%;		
+}
+/*波皮*/
+#zjbjtp #bopi{
+	background: url(/h5/public/image/BP.png) no-repeat;
+	background-size:100%;
+	width:30%;
+	height: 42%;
+	float: right;
+	margin-top:8%;
+	margin-right:5%;
+}
+/*高富*/
+#zjbjtp #gaofu{
+	background: url(/h5/public/image/GF.png) no-repeat;
+	background-size:100%;
+	width:30%;
+	height: 42%;
+	float: right;
+	margin-top:8%;
+	margin-right:0%;
+}
+/*投注的值，显示的值*/
+#luka_value{
+	position: absolute;
+	top:28%;
+	left: 15%;
+}
+#dalihua_value{
+	position: absolute;
+	top:28%;
+	left: 50%;
+}
+#sitela_value{
+	position: absolute;
+	top:28%;
+	left: 85%;
+}
+#gaofu_value{
+	position: absolute;
+	top:78%;
+	left: 15%;
+}
+#bopi_value{
+	position: absolute;
+	top:78%;
+	left: 50%;
+}
+#weilu_value{
+	position: absolute;
+	top:78%;
+	left: 85%;
+}
+
+/*投注按钮*/
+#touzhu1,#touzhu2,#touzhu3,#touzhu4,#touzhu5,#touzhu6{
+	background: url(/h5/public/image/g3_b08.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;
+	width:28%;
+	height: 10%;
+}
+/*卢卡--投注*/
+#touzhu1{
+	top:37%;
+	left:2%;
+}
+/*大丽花--投注*/
+#touzhu2{
+	top:37%;
+	left:37%;
+}
+/*斯塔拉--投注*/
+#touzhu3{
+	top:37%;
+	left:73%;
+}
+/*高富--投注*/
+#touzhu4{
+	top:88%;
+	left:2%;
+}
+/*波皮--投注*/
+#touzhu5{
+	top:88%;
+	left:37%;
+}
+/*薇露--投注*/
+#touzhu6{
+	top:88%;
+	left:73%;
+}
+/*最下面一个最大的div*/
+#zuixia{
+	/*display: none;*/
+}
+/*清零图片*/	 
+#qingling1{
+	background-repeat:no-repeat;
+	position: absolute;
+	left: 10%;
+	top: 82%;
+	width:20%;
+	height: 12%;	
+}
+/*确定投注图片*/	 
+#quedingtouzhu1{
+	background-repeat:no-repeat;
+	position: absolute;
+	left: 40%;
+	top: 80%;
+	width:52%;
+	height: 13%;	
+}
+/*总计*/
+#count{
+	position: absolute;
+	bottom: 8%;
+	left: 75%;
+	color:#FFFFFF;
+	font-size: 2rem;
+}
+/*结束确定投注*/
+#jiesu{
+	background: url(/h5/public/image/jinbi.png) ;
+	background-repeat:no-repeat;
+	background-size: 100%;
+	position: absolute;
+	width: 70%;
+	height: 18%;
+	bottom:3%;
+	left: 15%;
+	display: none;
+}
+#jieshu_jinbi{
+	position: absolute;
+	bottom: 10%;
+	left: 40%;
+	color:#FFFFFF;
+	font-size: 2rem;
+}
+/*第二个界面显示xn_content2-----结束*/
+
+
+
+/*第三个界面显示xn_content3-----开始*/
+#xn_content3{
+	display: none;
+}
+/*爆炸图片*/
+.baozha{
+	background: url(/h5/public/image/g3_b19.png) ;
+	background-repeat:no-repeat;
+	background-size:40%;
+	position: absolute;
+	top: 0%;
+	left: 36%;
+	width: 80%;
+	height: 50%;
+}
+.youxiguize{
+	/*background-image: url(image/g3_b11.png) ;*/
+	background-repeat:no-repeat;
+	background-size:80%;
+	position: absolute;   		
+	top: 15%;
+	right: 0%;
+	width: 25%;
+	height: 8%;
+}
+
+/*中间头像的图片*/
+.xuantu{
+	/*background: url(/h5/public/image/img_waiting_text.png) ;
+	background-repeat:no-repeat;	
+	background-size:100%;*/
+	position: absolute;
+	top: 18%;
+	left: 19%;
+	width: 60%;
+	height: 24%;
+}
+/*等待结果图片*/
+.xuantu_bg0{
+	background: url(/h5/public/image/img_waiting_text.png) no-repeat;
+	background-size:100%;
+}
+
+/*卢卡头像*/
+.xuantu_bg1{
+	background: url(/h5/public/image/g3_b01.png) no-repeat;
+	background-size:100%;
+}
+/*斯特拉头像*/
+.xuantu_bg2{
+	background: url(/h5/public/image/g3_b02.png) no-repeat;
+	background-size:100%;
+}
+/*大丽花头像*/
+.xuantu_bg3{
+	background: url(/h5/public/image/g3_b03.png) no-repeat;
+	background-size:100%;
+}
+/*薇露头像*/
+.xuantu_bg4{
+	background: url(/h5/public/image/g3_b04.png) no-repeat;
+	background-size:100%;
+}
+/*波皮头像*/
+.xuantu_bg5{
+	background: url(/h5/public/image/g3_b05.png) no-repeat;
+	background-size:100%;
+}
+/*高富头像*/
+.xuantu_bg6{
+	background: url(/h5/public/image/g3_b06.png) no-repeat;
+	background-size:100%;
+}
+/*奖杯*/
+.jiangbei{ 
+	background: url(/h5/public/image/g3_b17.png) ;		
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;
+	top: 43%;
+	left: 25%;
+	width: 55%;
+	height: 20%;
+}
+/*备注*/
+.beizhu{ 	
+	position: absolute;
+	bottom: 7%;
+	left: 12%;
+	width: 80%;
+	height: 33%;
+}
+.beizhu_bg{ 
+	background: url(/h5/public/image/g3_b16.png) ;		
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.beizhu_bg1{ 
+	background: url(/h5/public/image/zhongjiang.png) ;		
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.beizhu_bg2{ 
+	background: url(/h5/public/image/weiyazhong.png) ;		
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.beizhu_bg3{ 
+	background: url(/h5/public/image/weixiazhu.png) ;		
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+
+/*谁？获胜*/
+.beizhu_shui{
+	/*background: url(../image/g3_b01_N1.png) no-repeat;*/
+	position: absolute;
+	width:25%;
+	height: 10%;
+	top:7%;
+	left: 35%;	
+}
+/*卢卡*/
+.beizhu_shui_bg1{
+	background: url(/h5/public/image/g3_b01_N1.png) no-repeat;
+	background-size:80%;
+}
+/*斯特拉*/
+.beizhu_shui_bg2{
+	background: url(/h5/public/image/g3_b02_N1.png) no-repeat;
+	background-size:80%;
+}
+/*大丽花*/
+.beizhu_shui_bg3{
+	background: url(/h5/public/image/g3_b03_N1.png) no-repeat;
+	background-size:80%;
+}
+/*薇露*/
+.beizhu_shui_bg4{
+	background: url(/h5/public/image/g3_b04_N1.png) no-repeat;
+	background-size:80%;
+}
+/*波皮*/
+.beizhu_shui_bg5{
+	background: url(/h5/public/image/g3_b05_N1.png) no-repeat;
+	background-size:80%;
+}
+/*高富*/
+.beizhu_shui_bg6{
+	background: url(/h5/public/image/g3_b06_N1.png) no-repeat;
+	background-size:80%;
+}
+/*备注里面的金币字体*/
+#beizhu_jinbi{
+	position: absolute; 
+	top: 50%;
+	left: 40%;
+	color:#FFFFFF;
+	font-size: 3rem;
+}
+
+
+/*获胜字体*/
+/*#beizhu_ziti_hs{
+	background: url(../image/g3_b20.png) no-repeat;
+	position: absolute;
+	background-size:100%;
+	width:40%;
+	height: 23%;
+	top:30%;
+	left: 30%;	
+	display: none;
+}*/
+/*失败字体*/
+/*#beizhu_ziti_sb{
+	background: url(../image/g3_b20_1.png) no-repeat;
+	position: absolute;
+	background-size:100%;
+	width:50%;
+	height: 23%;
+	top:25%;
+	left: 25%;	
+	display: none;
+}*/
+/*#beizhu_ziti_wxz{
+	background: url(../image/g3_b20_2.png) no-repeat;
+	position: absolute;
+	background-size:100%;
+	width:50%;
+	height: 23%;
+	top:25%;
+	left: 25%;	
+	display: none;
+}*/
+
+
+/*第三个界面显示xn_content3-----开始*/

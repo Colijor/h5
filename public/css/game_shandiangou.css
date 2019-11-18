@@ -1,0 +1,246 @@
+/*轮盘首页界面---开始*/
+body {}
+/*主体盒子*/
+#container_lp {
+    width: 100%;
+    height: 100%!important;
+    background: url(/h5/public/image/shandiangou/bg.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    background-position: 0px 0px;
+    z-index: 1;
+}
+/*中间按钮图片*/
+#container_lp .zzsc-content {
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 55%;
+    z-index: 2;
+}
+/*.anniu{*/
+/*display: block;*/
+/*position: relative;*/
+/*width: 100%;*/
+/*}*/
+.anniu{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 40%;
+    background: url(/h5/public/image/shandiangou/down.png) no-repeat center/100% 100%;
+}
+.progress-container, .progress {
+    border-radius: 8px;
+}
+
+.progress-container {
+    width: 25%;
+    height: 60%;
+    /*height: 200px;*/
+    margin: 0 auto;
+    position: relative;
+    /*overflow: hidden;*/
+    box-shadow: #ffffff 0 0 20px;
+}
+
+.progress {
+    /*height: 100%;*/
+    position: absolute;
+    width: 100%;
+    background: -webkit-repeating-linear-gradient(to right,#4ec3fd, #ffffff,#4ec3fd); /* Safari 5.1 - 6.0 */
+    background: -o-repeating-linear-gradient(to right,#4ec3fd, #ffffff,#4ec3fd); /* Opera 11.1 - 12.0 */
+    background: -moz-repeating-linear-gradient(to right,#4ec3fd, #ffffff,#4ec3fd); /* Firefox 3.6 - 15 */
+    background: repeating-linear-gradient(to right,#4ec3fd, #ffffff,#4ec3fd); /* 标准的语法（必须放在最后） */
+    z-index: 1;
+    bottom: 0;
+    text-align: center;
+    color: #0389fd;
+    font-weight: bolder;
+}
+/*.emoji-wrapper {*/
+/*width: 100%;*/
+/*text-align: center;*/
+/*height: 260px;*/
+/*overflow: hidden;*/
+/*position: absolute;*/
+/*top: 120px;*/
+/*left: 0;*/
+/*}*/
+
+/*.emoji-wrapper:before,*/
+/*.emoji-wrapper:after {*/
+/*content: "";*/
+/*height: 15px;*/
+/*width: 100%;*/
+/*position: absolute;*/
+/*left: 0;*/
+/*z-index: 1;*/
+/*}*/
+
+/*.emoji {*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: center;*/
+/*transition: 1s;*/
+/*-webkit-transform: translateY(260px);*/
+/*transform: translateY(260px);*/
+/*}*/
+/*.emojiUp{*/
+/*-webkit-transform: translateY(-100px);*/
+/*transform: translateY(-100px);*/
+/*}*/
+
+/*.progress{*/
+/*position: absolute;*/
+/*left: 50%;*/
+/*transform: translateX(-50%);*/
+/*bottom: 35%;*/
+/*text-align: center;*/
+/*}*/
+#pg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.light{
+    width: 50px;
+    height: 20px;
+    margin-bottom: 5px;
+    background: green;
+}
+
+.LotteryResults{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.LotteryResult{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.LotteryResult img{display: block;}
+.LotteryResult1,.LotteryResult3{position: relative;}
+.LotteryResult2{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.LotteryResult3{margin-top: 15px;}
+.LotteryResult4{
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    padding: 0 20px;
+}
+#tipImg{
+    width: 300px;
+    height: 205px;
+}
+.wdjq{
+    width: 150px;
+    height: 50px;
+}
+.close{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+}
+/*遮罩*/
+#container_lp #fullbg {
+    background-color: gray;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+#container_lp #dialog {
+    width: 80%;
+    height: 15%;
+    background-image: url(/h5/public/image/roulette/g2_08.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 12%;
+    top: 45%;
+    z-index: 20;
+    margin-left: 0%;
+    display: none;
+    /*border: 1px solid #000000;*/
+}
+
+/*叉叉图片*/
+#container_lp #dialog #chachatupian {
+    background: url(/h5/public/image/roulette/g1_b10.png) no-repeat;
+    background-size: 100%;
+    width: 11%;
+    height: 38%;
+    margin-left: 88%;
+    margin-top: 0%;
+    text-decoration: none;
+}
+
+#container_lp #dialog p {
+    /*position: absolute;
+    top: 18%;
+    left: 13%;*/
+    margin-top: 8%;
+    margin-left: 13%;
+    font-family: "microsoft yahei", 微软雅黑, 宋体;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 1);
+    font-style: italic;
+}
+
+/*余额*/
+#yue {
+    position: relative;
+    z-index: 99;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    line-height: 45px;
+    background-color: rgba(67, 67, 67, 0.6);
+}
+.yueImg {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    width: 32px;
+    height: 32px;
+}
+.yueSpan{
+    color: #fff;
+}
+
+#wxchonhzhi{
+    padding: 3px 10px;
+    margin-left: 50px;
+    background-color: #FFCF11;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}

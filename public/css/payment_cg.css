@@ -1,0 +1,67 @@
+.zhuFu_cg_content{
+	position: relative;
+	margin-top: 70px;
+	width: auto;
+	height: 80%;
+	/*border: 1px solid #000000;*/
+}
+#chong_zhi{
+	margin-left: 20px;
+	width:90%;	
+	height: 8%;	
+	background-color: #FFFFFF;
+}
+
+#chong_zhi p{
+	margin-left: 35%;
+	padding-top: 10px;
+	font-size: 1rem;
+	font-weight:800;
+	color: #000000;		
+}
+#img_chenggong{
+	background-repeat:no-repeat ;
+	background-size:100% ;
+	width: 10%;
+	height: 80%;
+	margin-left: 22%;
+	margin-top: 1%;
+	padding-top: 5px;
+	float: left;
+}
+
+.zhuFu_cg_content table{
+	width:90%;	
+	max-height: 110%;
+	margin-left: 20px;
+	margin-top: 10px;
+	overflow:hidden;
+	overflow: auto; /*隐藏超出的内容*/
+	background-color: #FFFFFF;
+	/*border: 1px solid red;*/
+}
+
+#zhuFu_cg_td{
+	width: 35%;
+	height: 40px;
+	padding-left: 10px;	
+	/*border: 1px solid blue;*/
+}
+
+#fh_chongzhi{
+	margin-left: 20px;
+	margin-top: 20px;
+	width:90%;	
+	height: 8%;	
+	background-color: #FFFFFF;
+}
+
+#fh_chongzhi a{
+	display:block;
+	padding-top: 10px;
+	margin-left: 35%;
+	margin-top: 20px;
+	font-size: 1rem;
+	font-weight:800;
+	color: #000000;	
+}

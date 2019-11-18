@@ -1,0 +1,99 @@
+/*主体盒子*/
+#container{
+	width:100%;
+	max-width: 640px; /*设计图的原因 不让它放大*/
+	min-width: 300px; /*为了更好的布局*/
+	/*margin:0 auto;*/
+	height: 667px;
+	background-size:cover;
+	background-image: url(/h5/public/image/00.jpg) ;
+	background-repeat:no-repeat;
+	/*background: red;*/
+	position: relative;
+}
+/*攻击*/
+#inp{
+	background: url(/h5/public/image/gongji.png) no-repeat;
+	background-size:80%;
+	width: 40%;
+	height: 20%;
+	position: absolute;
+	top: 63%;
+	left: -2%;
+}
+/*攻速加*/
+.gongsujia{			
+	position: absolute;
+	top: 47%;
+	left: 24%;
+}
+.bg1{
+	background: url(/h5/public/image/gongsujia.png) no-repeat;
+	background-size:110%;
+	width: 120px;
+	height: 100px;
+}
+.bg2{
+	background: url(/h5/public/image/gongsujia_1.png) no-repeat;
+	background-size:110%;
+	width: 120px;
+	height: 100px;
+}
+/*攻速减*/
+.gongsujian{
+	position: absolute;
+	top: 65%;
+	left: 28%;
+}
+.bgg1{
+	background: url(/h5/public/image/gongsujian.png) no-repeat;
+	background-size:110%;
+	width: 120px;
+	height: 100px;
+}
+.bgg2{
+	background: url(/h5/public/image/gongsujian_1.png) no-repeat;
+	background-size:110%;
+	width: 120px;
+	height: 100px;
+}
+
+/*自动攻击*/
+.zidonggongji{
+	position: absolute;
+	top: 43%;
+	left: -5%;
+}
+.bggg1{
+	background: url(/h5/public/image/zidonggongji.png) no-repeat;
+	background-size:110%;
+	width: 120px;
+	height: 100px;
+}
+.bggg2{
+	background: url(/h5/public/image/zidonggongji_1.png) no-repeat;
+	background-size:110%;
+	width: 120px;
+	height: 100px;
+}
+
+/*左滑按钮*/
+#left_zh{
+	background: url(/h5/public/image/zuo.png) no-repeat;
+	background-size:130%;
+	width: 40%;
+	height: 22%;
+	position: absolute;
+	top: -3%;
+	left: -6%;
+}
+/*右滑按钮*/
+#right_yh{
+	background: url(/h5/public/image/you.png) no-repeat;
+	background-size:130%;
+	width: 40%;
+	height: 22%;
+	position: absolute;
+	top: 18%;
+	left: -6%;
+}

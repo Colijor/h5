@@ -1,0 +1,42 @@
+/*主体盒子*/
+#container{
+	width:100%;
+	max-width: 640px; /*设计图的原因 不让它放大*/
+	min-width: 300px; /*为了更好的布局*/
+	/*margin:0 auto;*/
+	height: 667px;
+	background-size:cover;
+	background-image: url(../image/tk_01.png) ;
+	background-repeat:no-repeat;
+	/*background: red;*/
+	position: relative;
+}
+/*攻击*/
+#inp{
+	background: url(../image/gongji.png) no-repeat;
+	background-size:80%;
+	width: 40%;
+	height: 20%;
+	position: absolute;
+	top: 63%;
+	left: -2%;
+}
+
+/*自动攻击*/
+.kaishi{
+	position: absolute;
+	top: 43%;
+	left: 2%;
+}
+
+.bg1{
+	background: url(../image/tk_0.png) no-repeat;
+	background-size:110%;
+	width: 40px;
+	height: 80px;
+}
+
+#container .direction_btn{position:absolute;bottom:10%;top:5%;left:-2%;width:190px;height:190px;}
+#container .direction_btn .img-rotate{position:absolute;width:100%;top:0%;bottom:0%;z-index:1;}
+#container .direction_btn .img-center{position:absolute;width:100%;left:0%;top:0%;bottom:0%;z-index:11;}
+

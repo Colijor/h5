@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="/h5/public/css/base.css"/>
+		<link href="/h5/public/css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="/h5/public/css/payment.css"/>
+	    <title>支付界面</title>
+	    <script src="/h5/public/js/jquery.min.js"></script>
+	    <!--common.js里面是放的苹果手机，安卓手机的适配样式-->
+	    <script src="/h5/public/js/common.js"></script>
+	    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	    <script src="/h5/public/js/public.js"></script>
+	    <script src="/h5/public/js/public_check_login_home.js"></script>
+	    <script src="/h5/public/js/payment.js"></script>
+	</head>
+	
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="/h5/personal_Center.html" id="fh" class="mui-action-back mui-icon mui-icon-left-nav "></a>
+			<h1 class="mui-title">支付</h1>
+		</header>
+		<div class="payment_container">
+			<div id="pay_yonghu">
+				<span>充值账号：</span>
+				<span></span>
+			</div>
+			<div id="pay_jin">
+				<form>
+					<div class="money_1" value=""><span>1¥<span></div>
+					<div class="money_10" value=""><span>10¥<span></div>
+					<div class="money_50" value=""><span>50¥<span></div>
+					<div class="money_100" value=""><span>100¥<span></div>
+					<div class="payment_qt">
+						<label></label>
+						<input type="tel" class="recharge" name="recharge" onkeyup="value=value.replace(/[^\d]/g,'')" autofocus="autofocus"  placeholder="随意充值数">			
+					</div>
+					<div class="payment_beizhu">
+						<p>自定义金额：<font>（注：1¥ = 100 红币）</font></p>
+					</div>
+				</form>
+			<div>			
+			<button type="button" id='price' >立即充值</button>
+		</div>
+		
+	</body>
+</html>

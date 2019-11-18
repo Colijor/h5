@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="/h5/public/css/base.css"/>
+		<link href="/h5/public/css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="/h5/public/css/shuluma.css"/>
+	    <title>屏幕码</title>
+	    <script src="/h5/public/js/jquery.min.js"></script>
+	    <!--common.js里面是放的苹果手机，安卓手机的适配样式-->
+	    <script src="/h5/public/js/common.js"></script>
+	    <script src="/h5/public/js/public.js"></script>
+	    <script src="/h5/public/js/public_check_login_home.js"></script>
+	    <script src="/h5/public/js/shuluma.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="shu_tou">
+			<a href="/h5/personal_Center.html" id="shu_fh" class="mui-action-back mui-icon mui-icon-left-nav "></a>
+			<h1 class="mui-title" id="shu_mui-title">屏幕码</h1>
+		</header>
+		<div class="shuluma_contanir">
+			<div class="shu_nei">
+				<span>输入屏幕码，连接大屏幕互动：</span>
+				<form class="slm_input">		
+					<input type="tel" id="shuluma_text" name="tel" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength="7" size="20px">				
+				</form>
+				<button type="button" id="go" value="">连接屏幕</button>				<div style="position: relative; top: 200px; left: 150px;">					<a href="http://k.cardniu.com/114G4R" >领取卡牛红包</a>				</div>
+			</div>
+		</div>
+	</body>
+</html>

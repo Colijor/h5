@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="782e94da-7096-479b-a07d-20748149f556" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="102008900">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="57" />
+          <entry key="project.open.time.0" value="9" />
+          <entry key="project.open.time.1" value="7" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="9" />
+          <entry key="project.open.time.8" value="22" />
+          <entry key="project.open.time.9" value="6" />
+          <entry key="project.opened" value="58" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="22" />
+          <entry key="html" value="78" />
+          <entry key="jpg" value="6" />
+          <entry key="js" value="60" />
+          <entry key="png" value="43" />
+          <entry key="ts" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="22" />
+          <entry key="HTML" value="78" />
+          <entry key="Image" value="49" />
+          <entry key="JavaScript" value="60" />
+          <entry key="TypeScript" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="956" />
+          <entry key="html" value="2178" />
+          <entry key="js" value="4625" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="956" />
+          <entry key="HTML" value="2178" />
+          <entry key="JavaScript" value="4625" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="485704406">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="21" />
+          <entry key="project.open.time.0" value="6" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="33" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="38" />
+          <entry key="html" value="57" />
+          <entry key="jpg" value="37" />
+          <entry key="js" value="129" />
+          <entry key="js___jb_tmp___" value="2" />
+          <entry key="png" value="337" />
+          <entry key="proto" value="2" />
+          <entry key="ts" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="38" />
+          <entry key="HTML" value="57" />
+          <entry key="Image" value="374" />
+          <entry key="JavaScript" value="129" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PROTO" value="2" />
+          <entry key="TypeScript" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="3012" />
+          <entry key="html" value="3124" />
+          <entry key="js" value="13179" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="3012" />
+          <entry key="HTML" value="3124" />
+          <entry key="JavaScript" value="13179" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/game_lp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-529">
+              <caret line="157" column="38" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/wxChat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="155" column="43" lean-forward="true" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/game_xinlp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="457" column="94" selection-start-line="457" selection-start-column="94" selection-end-line="457" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wxChat.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="4" column="118" lean-forward="true" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="118" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/wxChat.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_sryx.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/game_sryx.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/game_xinlp.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2208">
+              <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_xinlp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2622">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="121" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>showBg</find>
+      <find>ysgz_closeBg</find>
+      <find>boxNumber</find>
+      <find>modifyBtn</find>
+      <find>modify</find>
+      <find>chachatupian</find>
+      <find>ysgz_dialog</find>
+      <find>ysgz_fullbg</find>
+      <find>ysgz_closeBg()</find>
+      <find>word_box</find>
+      <find>boxId_</find>
+      <find>you_left</find>
+      <find>sendMessage</find>
+      <find>container_lp</find>
+      <find>news</find>
+      <find>chat-notice</find>
+      <find>sryxBody</find>
+      <find>selectImg</find>
+      <find>increased</find>
+      <find>write_list</find>
+      <find>wenwen</find>
+      <find>up_say</find>
+      <find>speak_box</find>
+      <find>.wenwen_help button</find>
+      <find>top:</find>
+      <find>.question_text i</find>
+      <find>.question_text p</find>
+      <find>dailog</find>
+      <find>question_text</find>
+      <find>to_write</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ll.html" />
+        <option value="$PROJECT_DIR$/public/js/common.js" />
+        <option value="$PROJECT_DIR$/dailog.html" />
+        <option value="$PROJECT_DIR$/public/js/dialog.js" />
+        <option value="$PROJECT_DIR$/public/game_proto_sryx.js" />
+        <option value="$PROJECT_DIR$/public/js/game_proto_sryx.js" />
+        <option value="$PROJECT_DIR$/public/game_proto_sryx.html" />
+        <option value="$PROJECT_DIR$/public/js/common_proto.js" />
+        <option value="$PROJECT_DIR$/public/protobuf/test.js" />
+        <option value="$PROJECT_DIR$/public/css/base.css" />
+        <option value="$PROJECT_DIR$/public/js/game_sryx_sj.js___jb_tmp___" />
+        <option value="$PROJECT_DIR$/public/js/tuchuAlert.js" />
+        <option value="$PROJECT_DIR$/public/css/tuichuAlert.css" />
+        <option value="$PROJECT_DIR$/public/js/xBack.js" />
+        <option value="$PROJECT_DIR$/public/game_newlp.html" />
+        <option value="$PROJECT_DIR$/public/css/game_sryx.css" />
+        <option value="$PROJECT_DIR$/game_sryx.html" />
+        <option value="$PROJECT_DIR$/public/css/game_xinlp.css" />
+        <option value="$PROJECT_DIR$/public/js/game_newlp.js" />
+        <option value="$PROJECT_DIR$/public/js/public_login_redis_sj.js" />
+        <option value="$PROJECT_DIR$/public/js/game_sryx_sj_free.js" />
+        <option value="$PROJECT_DIR$/public/css/game_sryx_free.css" />
+        <option value="$PROJECT_DIR$/game_sryx_free.html" />
+        <option value="$PROJECT_DIR$/game_xinlp_noyue.html" />
+        <option value="$PROJECT_DIR$/public/js/game_xinlp_noyue.js" />
+        <option value="$PROJECT_DIR$/public/js/public_login.js" />
+        <option value="$PROJECT_DIR$/public/css/shandiangou.css" />
+        <option value="$PROJECT_DIR$/public/js/ProgressBarWars.js" />
+        <option value="$PROJECT_DIR$/public/js/progressJS.js" />
+        <option value="$PROJECT_DIR$/public/css/progressJS.css" />
+        <option value="$PROJECT_DIR$/game_shandiangou02.html" />
+        <option value="$PROJECT_DIR$/public/css/game_shandiangou.css" />
+        <option value="$PROJECT_DIR$/game_shandiangou.html" />
+        <option value="$PROJECT_DIR$/game_xinlp.html" />
+        <option value="$PROJECT_DIR$/public/js/game_sryx_sj.js" />
+        <option value="$PROJECT_DIR$/public/js/game_shandiangou.js" />
+        <option value="$PROJECT_DIR$/game_lp.html" />
+        <option value="$PROJECT_DIR$/public/js/game_lp.js" />
+        <option value="$PROJECT_DIR$/public/css/game_lp.css" />
+        <option value="$PROJECT_DIR$/public/js/testChat.js" />
+        <option value="$PROJECT_DIR$/testChat.html" />
+        <option value="$PROJECT_DIR$/wxChat.html" />
+        <option value="$PROJECT_DIR$/public/css/wxChat.css" />
+        <option value="$PROJECT_DIR$/public/js/game_xinlp.js" />
+        <option value="$PROJECT_DIR$/public/js/wxChat.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="304" />
+    <option name="y" value="78" />
+    <option name="width" value="1389" />
+    <option name="height" value="822" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="h5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="h5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="h5" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/moban1541/moban1541" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hdd\Desktop\h5\public\protobuf" />
+      <recent name="D:\WorkSpace\h5\public\js" />
+      <recent name="D:\WorkSpace\h5\public\image\wolf" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hdd\Desktop\h5\public\css" />
+      <recent name="C:\Users\hdd\Desktop\h5\public" />
+      <recent name="C:\Users\hdd\Desktop\h5\public\js" />
+      <recent name="C:\Users\hdd\Desktop\h5\public\protobuf" />
+      <recent name="D:\WorkSpace\h5\public\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="782e94da-7096-479b-a07d-20748149f556" name="Default Changelist" comment="" />
+      <created>1546480051617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546480051617</updated>
+      <workItem from="1546480053647" duration="7634000" />
+      <workItem from="1546501712291" duration="8243000" />
+      <workItem from="1546565718140" duration="24335000" />
+      <workItem from="1546652326033" duration="5422000" />
+      <workItem from="1546831525408" duration="1213000" />
+      <workItem from="1546939482343" duration="4969000" />
+      <workItem from="1546999805205" duration="14641000" />
+      <workItem from="1547083611524" duration="4279000" />
+      <workItem from="1547105537446" duration="11872000" />
+      <workItem from="1547170270423" duration="88000" />
+      <workItem from="1547170448635" duration="22621000" />
+      <workItem from="1547256641965" duration="17228000" />
+      <workItem from="1547288892598" duration="19000" />
+      <workItem from="1547429307752" duration="8161000" />
+      <workItem from="1547532808303" duration="14038000" />
+      <workItem from="1547601742983" duration="3620000" />
+      <workItem from="1547609916261" duration="14506000" />
+      <workItem from="1547708827450" duration="684000" />
+      <workItem from="1547714910964" duration="103000" />
+      <workItem from="1547782116283" duration="2588000" />
+      <workItem from="1547799557595" duration="897000" />
+      <workItem from="1547864739033" duration="135000" />
+      <workItem from="1548140777284" duration="121000" />
+      <workItem from="1548467951368" duration="21000" />
+      <workItem from="1550052644332" duration="121000" />
+      <workItem from="1550110548704" duration="9970000" />
+      <workItem from="1550130648090" duration="1706000" />
+      <workItem from="1551408850636" duration="7236000" />
+      <workItem from="1551835195599" duration="593000" />
+      <workItem from="1551922694915" duration="19105000" />
+      <workItem from="1552008495533" duration="10333000" />
+      <workItem from="1552285783164" duration="8645000" />
+      <workItem from="1553152746891" duration="3074000" />
+      <workItem from="1553161245111" duration="861000" />
+      <workItem from="1553566352650" duration="613000" />
+      <workItem from="1554082921403" duration="13988000" />
+      <workItem from="1554169264282" duration="4953000" />
+      <workItem from="1554255755060" duration="15000" />
+      <workItem from="1554271373722" duration="14796000" />
+      <workItem from="1554342612019" duration="10814000" />
+      <workItem from="1554689350926" duration="577000" />
+      <workItem from="1554690394905" duration="13068000" />
+      <workItem from="1554775126239" duration="18476000" />
+      <workItem from="1554859532275" duration="17042000" />
+      <workItem from="1554945541867" duration="11076000" />
+      <workItem from="1554977799017" duration="1053000" />
+      <workItem from="1555032752653" duration="14967000" />
+      <workItem from="1555118909228" duration="20147000" />
+      <workItem from="1555291357756" duration="11854000" />
+      <workItem from="1555463682469" duration="11059000" />
+      <workItem from="1555550173307" duration="290000" />
+      <workItem from="1555570226963" duration="460000" />
+      <workItem from="1555570734773" duration="700000" />
+      <workItem from="1555658235185" duration="5065000" />
+      <workItem from="1555987929125" duration="13441000" />
+      <workItem from="1556068514316" duration="6123000" />
+      <workItem from="1556156604514" duration="591000" />
+      <workItem from="1556250018662" duration="5651000" />
+      <workItem from="1556346057062" duration="1825000" />
+      <workItem from="1556350537170" duration="46000" />
+      <workItem from="1556352890872" duration="810000" />
+      <workItem from="1556414268136" duration="70547000" />
+      <workItem from="1556599630399" duration="19300000" />
+      <workItem from="1557018993664" duration="19584000" />
+      <workItem from="1557046704103" duration="34765000" />
+      <workItem from="1557197826945" duration="20061000" />
+      <workItem from="1557278130727" duration="4665000" />
+      <workItem from="1557282841966" duration="1982000" />
+      <workItem from="1557286288149" duration="57294000" />
+      <workItem from="1557711557855" duration="76634000" />
+      <workItem from="1558608061976" duration="4943000" />
+      <workItem from="1559015731889" duration="12292000" />
+      <workItem from="1559352285620" duration="4172000" />
+      <workItem from="1559529194025" duration="20546000" />
+      <workItem from="1560149692076" duration="1093000" />
+      <workItem from="1560305777851" duration="4755000" />
+      <workItem from="1560838888820" duration="671000" />
+      <workItem from="1560993461420" duration="64000" />
+      <workItem from="1561021715286" duration="1218000" />
+      <workItem from="1561630392889" duration="2496000" />
+      <workItem from="1561771252631" duration="12083000" />
+      <workItem from="1562131881675" duration="22658000" />
+      <workItem from="1562552652163" duration="8849000" />
+      <workItem from="1562824851326" duration="28000" />
+      <workItem from="1564396579004" duration="1811000" />
+      <workItem from="1564449904029" duration="4778000" />
+      <workItem from="1565167333149" duration="80618000" />
+      <workItem from="1566199318703" duration="5645000" />
+      <workItem from="1566281502332" duration="2509000" />
+      <workItem from="1566611161294" duration="28940000" />
+      <workItem from="1566783718088" duration="6908000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="960491000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09378293" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18598525" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dailog.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/public_login_sj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/weixin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/login_sj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/game_sryx_sj_free.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/game_sryx_free.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="80" column="16" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/escGame.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/escGamePress.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/wolf/again.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_sryx_free.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/public_login_redis_sj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/bg1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/bg2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/game_xinlp_noyue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="89" lean-forward="true" selection-end-line="423" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_xinlp_noyue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/simpleAlert.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/shandiangou/bg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/public_login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_shandiangou02.html" />
+    <entry file="file://$PROJECT_DIR$/public/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ProgressBarWars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/game_shandiangou.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5635">
+          <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_shandiangou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1978">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/progressJS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6555">
+          <caret line="285" column="2" selection-start-line="285" selection-start-column="2" selection-end-line="285" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/citiao.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/g1_09.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/modify.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/g1_b10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/image/roulette/ciku.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/game_shandiangou.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4140">
+          <caret line="180" column="48" selection-start-line="180" selection-start-column="48" selection-end-line="180" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/game_sryx_sj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3565">
+          <caret line="155" column="36" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_lp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/game_lp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/progressJS.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1033">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/testChat.js" />
+    <entry file="file://$PROJECT_DIR$/testChat.html" />
+    <entry file="file://$PROJECT_DIR$/public/image/wxChat/yy_btn.png" />
+    <entry file="file://$PROJECT_DIR$/public/image/wxChat/yuyin_bg.png" />
+    <entry file="file://$PROJECT_DIR$/public/image/wxChat/jp_btn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/game_sryx.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/game_xinlp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_xinlp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2622">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="121" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/wxChat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_sryx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10088">
+          <caret line="15872" column="4" selection-start-line="15872" selection-start-column="4" selection-end-line="15872" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/game_xinlp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="457" column="94" selection-start-line="457" selection-start-column="94" selection-end-line="457" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/game_lp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-529">
+          <caret line="157" column="38" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/wxChat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="155" column="43" lean-forward="true" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxChat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="4" column="118" lean-forward="true" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="118" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

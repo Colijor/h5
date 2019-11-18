@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/h5/public/css/base.css?timestamp=new Date().getTime()"/>	
+	<link rel="stylesheet" type="text/css" href="/h5/public/css/game_cj.css?ver=2.3"/>
+    <title>抽奖界面</title>
+    <script src="/h5/public/js/jquery.min.js"></script>
+	<!--common.js里面是放的苹果手机，安卓手机的适配样式-->
+	<script src="/h5/public/js/common.js"></script>
+    <script src="/h5/public/js/public.js"></script>
+    <!-- <script src="/h5/public/js/public_check_login.js"></script>-->
+    <script src="/h5/public/js/public_login_redis_sj.js"></script>
+    <script src="/h5/public/js/game_cj_sj.js"></script> 
+    <script>
+		$("#container_sb").show(); /*失败界面*/
+		$("#container_shouye").hide(); /*首页界面*/
+		$("#container_zj").hide(); /*中奖界面*/
+    </script>
+           
+	
+</head>
+<body>	
+	<div id="container">	
+		<!--头像-->
+		<div class="touxiang">
+			<a href="/h5/personal_Center.html"><img src="/h5/public/image/u116.png"></a>
+			<span></span>
+			<span></span>
+		</div>
+		<div id="div_prizes" style="padding-left: 50px; padding-top: -40px;position:absolute; z-index: 999999999; top: 9%; left: 0%; display: none;">
+			<img src="/h5/public/image/u178.png" width="10px" height="10px">
+		</div>
+		
+		<!--玩法规则-->	
+		<div id="main">
+			<input type="button" class="wanfaguize">
+		</div>
+		
+		<!--遮罩层-->
+	    <div id="fullbg"></div>
+	    
+	    <!--从下往上弹出-->
+	    <div id="tanchu">
+	    	<div id="tanchu_jp">
+	    		<ul>
+	    			<li id="li1" style="padding-top: 10px;">一等奖：<span>暂无活动</span></li>
+	    			<li id="li2">二等奖：<span>暂无活动</span></li>
+	    			<li id="li3">三等奖：<span>暂无活动</span></li>
+	    			<li id="li4">四等奖：<span>暂无活动</span></li>
+	    			<li id="li5">五等奖：<span>暂无活动</span></li>
+	    		</ul>
+	    		<ul>
+	    			<li id="li6">活动时间：<span></span></li>
+	    			<li id="li7">兑奖时间：<span></span></li>
+	    			<li>请大家去相近的门店进行兑奖</li>
+	    			<li style="text-align: center; padding-top: 10px;"><img id="guanbi" src="/h5/public/image/u177.png" width="140px" height="40px"></img></li>
+	    		</ul>
+	    	</div>
+	    	<!-- <input type="button" id="chachatupian"> -->
+	    </div>	
+		
+		<!--抽奖首页-------第一个界面----------->
+		<div id="container_shouye">								
+			<!--有奖大派送-->
+			<div class="youjiangtupian"></div>
+	
+			<!--圆盘-->
+			<div class="yuanpan"></div>
+			
+			<!--开始抽奖图片-->
+			<div class="img_box" >
+				<a href="javascript:void(0);" class="btn1" onclick="WebSocketTest();"></a>			
+			</div>
+		</div>
+		<!--抽奖首页------第一个界面-----------结束-->	
+		
+		<!--中奖界面------第二个界面----->
+		<div id="container_zj">				
+			<!--红包图片-->
+			<div class="zj_hongbao">
+				<!--中奖字体-->
+				<p id="gxzj"></p>
+			</div>		
+			<!--确定图片-->
+			<div><a href="javascript:void(0);" class="zj_queding"></a></div>
+			<div><a href="javascript:void(0);" class="zj_liji"></a></div>	
+			<div><a href="javascript:void(0);" class="zj_cunru"></a></div>					    	    
+		</div>	
+		<!--中奖界面------第二个界面-----结束-->
+		
+		<!--失败界面------第三个界面----->
+		<div id="container_sb">				
+			<!--红包图片-->
+			<div class="sb_hongbao"></div>
+	
+			<!--确定图片-->
+			<div>
+				<div><a href="javascript:void(0);" class="sb_queding"></a></div>
+			</div>				    	    
+		</div>	
+		<!--失败界面------第三个界面-----结束-->
+		
+		<div style="position: absolute;top: 65%;width: 100%;height: 15%; text-align: center;" id="divweixin">
+			<img src="/h5/public/image/u292.jpg" width="100px" height="100px"/><br/>
+			<span style="font-size: 15px; padding-top: 10px;">关注“红点点互动”公众号，可以查看中奖记录</span>
+		</div>
+		
+	</div>
+</body>
+</html>

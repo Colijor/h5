@@ -1,0 +1,101 @@
+/*主体盒子*/
+.personal_Center_container{
+	width:100%;margin:0 auto;height: 667px;position: relative;/*overflow:hidden;*//*border: 1px solid #00CCFF*/;
+}
+
+/*返回键*/
+#per_fh{color: #8A8A8A;}
+
+/*<!--头像，用户名，金币-->*/
+.content_01{
+	width:100%;margin:0 auto;height: 200px;position: relative;/*overflow:hidden;*//*border: 1px solid #00CCFF*/;
+}
+/*<!--目录-->*/
+.content_02{width:100%;margin-top: 12px;height: 450px;position: relative;/*overflow:hidden;*//*border: 1px solid #00CCFF*/;
+}
+/*头像*/
+.content_01 .tx a img{
+	background-repeat:no-repeat;background-size: 100%;position: absolute;
+	width: 30%;height: 53%;left: 2%;top: 30%;
+	border-radius:100px
+	/*border: 1px solid #2AC845;*/
+}
+/*用户名，金币信息*/
+.content_01 .xinxi{
+	position: absolute;width: 50%;height: 63%;left: 33%;top: 30%;
+	/*border: 1px solid #8A6DE9;*/
+}
+/*用户名*/
+.content_01 .xinxi span:first-child{position: absolute;left:0%;top:18%;font-size: 20px;
+}
+/*金币图片*/
+.content_01 .xinxi .jinbi{
+	background: url(/h5/public/image/icon_money.png) no-repeat;
+	background-size: 100%;position: absolute;width: 20%;height: 35%;left: 0%;top: 40%;
+	/*border: 1px solid #8A6DE9;*/
+}
+/*金币数量*/
+.content_01 .xinxi span:nth-of-type(2){position: absolute;left: 20%;top: 48%;color:#666666;
+	/*border: 1px solid #8A6DE9;*/
+}
+
+.content_02 span{position: absolute;margin-top: 3%;margin-left: 5%;}
+
+/*充值*/
+.chongzhi{
+	width: 100%;height: 10%;margin-top: 5px;background-color: #FAFAFA;cursor:pointer;
+	/*border: 1px solid #8A6DE9;*/
+}
+.chongzhi .tiaozhuan{
+	position: absolute;background: url(/h5/public/image/u38.png) no-repeat;
+	background-size: 30%;width: 10%;height: 20%;right: 0%;top:0%;
+}
+/*充值记录*/
+.jilv{
+	width: 100%;height: 10%;margin-top: 5px;cursor:pointer;
+	background-color: #FAFAFA;
+	/*border: 1px solid #8A6DE9;*/
+}
+.jilv .tiaozhuan{
+	position: absolute;background: url(/h5/public/image/u38.png) no-repeat;
+	background-size: 30%;width: 10%;height: 20%;right: 0%;top:12%;
+}
+/*奖品*/
+.jiangpin{
+	width: 100%;height: 10%;margin-top: 5px;background-color: #FAFAFA;cursor:pointer;
+	/*border: 1px solid #8A6DE9;*/
+}
+.jiangpin .tiaozhuan{
+	position: absolute;background: url(/h5/public/image/u38.png) no-repeat;
+	background-size: 30%;width: 10%;height: 20%;right: 0%;top:23%;
+}
+/*微信授权*/
+.shouquan{
+	width: 100%;height: 10%;margin-top: 5px;background-color: #FAFAFA;cursor:pointer;
+	/*border: 1px solid #8A6DE9;*/
+}
+#weiXinTiShi{
+	position: absolute;font-size: 13px;margin-top: 2%;right: 3%;color:#2AC845;
+}
+.shouquan .tiaozhuan{
+	position: absolute;
+	width: 23%;height: 28%;right: 0%;top:34%;
+}
+/*关于我们*/
+.guanyu{
+	width: 100%;height: 10%;margin-top: 5px;background-color: #FAFAFA;cursor:pointer;color: #000000;
+	/*border: 1px solid #8A6DE9;*/
+}
+.guanyu .tiaozhuan{
+	position: absolute;background: url(/h5/public/image/u38.png) no-repeat;
+	background-size: 30%;width: 10%;height: 20%;right: 0%;top:34%;
+}
+/*退出*/
+.tc_button{
+	position: absolute;width: 40%;height: 8%;left: 30%;cursor:pointer;
+	top:70%;color: #FFFFFF;background-color: #DD524D;
+}
+
+
+
+

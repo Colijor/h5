@@ -1,0 +1,27 @@
+.receive_prize_contanir{
+	position: relative;
+	margin-top: 43px;
+	width: auto;
+	height: 100%;
+	background-color: #F2F2F2;
+	border: 1px solid #F2F2F2;
+}
+
+#receive_prize_bj{background-color: #FF4040;}	
+
+#receive_prize_fh{color: #FAFAFA;}
+
+#receive_prize_zt{color: #FAFAFA;}
+
+.rece_center{
+	width: 80%;height: 70%;position: relative;top: 6%;left: 10%;
+	border: 1px solid #F2F2F2;
+}
+
+.rece_center p{color: #000000;}
+
+#rece_button{
+	width: 55%;bottom:5%;left: 20%;
+	border-radius:6px;color: #FAFAFA;
+	background-color: #FF4040;
+}

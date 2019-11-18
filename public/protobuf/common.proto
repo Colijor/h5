@@ -1,0 +1,7 @@
+syntax = "proto3";
+message Common{
+    int32 sendId = 1;
+    int32 receiverId = 2;
+    int32 type = 3;
+    string msg = 4;
+}

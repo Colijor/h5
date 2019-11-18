@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>聊天室</title>
+    <link rel="stylesheet" type="text/css" href="/h5/public/css/wxChat.css"/>
+</head>
+<body>
+<div class="speak_window">
+    <!--<div class="chat-notice"></div>-->
+    <div class="speak_box">
+        <div class="answer">
+            <div class="heard_img left"><img src="public/image/wxChat/dglvyou.jpg"></div>
+            <div class="answer_name_you">巴拉巴拉小魔仙</div>
+            <div class="answer_text">
+                <p>欢迎加入聊天吧，巴拉巴拉小魔仙，魔法变身，变变变！！！</p>
+                <i></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="saying">
+    <img src="public/image/wxChat/saying.gif">
+</div>
+<div class="wenwen-footer">
+    <div class="wenwen_btn left" onClick="to_write()"><img src="public/image/wxChat/jp_btn.png"></div>
+    <div class="wenwen_text left" onClick="to_write()">
+        <div class="write_box">
+            <input type="text" class="left" onKeyUp="keyup()" placeholder="请输入关键字" />
+        </div>
+        <!--<div class="circle-button" id="wenwen">-->
+            <!--按住 说话-->
+        <!--</div>-->
+    </div>
+    <div class="wenwen_help right">
+        <!--<a href="http://sc.chinaz.com/jiaoben/">-->
+            <!--<img src="public/image/wxChat/help_btn.png">-->
+        <!--</a>-->
+        <button onClick="up_send()" class="right">发送</button>
+    </div>
+    <div style="opacity:0;" class="clear"></div>
+</div>
+
+<script src="/h5/public/js/jquery.min.js"></script>
+<!--common.js里面是放的苹果手机，安卓手机的适配样式-->
+<script src="/h5/public/js/common.js"></script>
+<script src="/h5/public/js/public.js"></script>
+<script src="/h5/public/js/public_login.js"></script>
+<script src="/h5/public/protobuf/protobuf.js"></script>
+<script src="/h5/public/js/wxChat.js"></script>
+</body>
+</html>

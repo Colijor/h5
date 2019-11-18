@@ -1,0 +1,305 @@
+/*<!--三个界面的头像，玩法规则图片，遮罩层，从下往上弹起 ------->*/
+/*主体盒子*/
+#container{
+	width:100%;
+	/*margin:0 auto;*/
+	height:667px; 
+	background: url(/h5/public/image/g4_01.png) ;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position: relative;
+	
+}
+/*头像图片*/
+.touxiang{
+	background-image: url(/h5/public/image/mui_01.png) ;
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: relative;
+	z-index: 99999999;
+	top: 1%;
+	left: 0%;
+	width: 55%;
+	height: 11%;
+	/*border: 1px solid #000000;*/
+}
+
+.touxiang img{
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;
+	width: 30%;
+	height: 72%;
+	top: 13%;
+	left: 3%;
+	border-radius:100px;
+}
+
+.touxiang span:nth-of-type(1){
+	position: absolute;
+	left: 32%;
+	top:12%;
+	font-size: 13px;
+}
+
+.touxiang span:nth-of-type(2){
+	position: absolute;
+	left: 50%;
+	top:52%;
+	color: #FFFFFF;
+}
+
+/*头像div结束*/
+
+
+/*玩法规则图片*/   	
+.wanfaguize{
+	position: absolute; 
+	z-index: 9999999999999999999999999999999; 
+	top: 2%;
+	right: 0%;
+}
+.wanfaguize1{
+	background: url(/h5/public/image/g4_b01.png) no-repeat;
+	background-size:100%;
+	width: 30%;
+	height: 8%;
+}
+
+.wanfaguize2{
+	background: url(/h5/public/image/g4_b01.png) no-repeat;
+	background-size:100%;
+	width: 26%;
+	height: 6%;
+}
+
+/*遮罩*/
+#fullbg { 
+	background-color:gray; 
+	left:0; 
+	opacity:0.5; 
+	position:absolute; 
+	z-index: 99999999999999;
+	top:0; 
+	z-index:5;
+} 
+
+/*从下弹起的div*/ 
+#tanchu{ 
+	position: fixed; 
+	z-index:9999999999999999999;	
+	background: url(/h5/public/image/g4_rule.png) no-repeat;
+	background-size:100%;	  		
+	bottom:-20px;
+	left: 0%;
+	width: 100%;
+	height: 80%; 
+	display:none; 		
+}
+#tanchu #tanchu_jp{
+	display: block;
+	margin-top: 30%;
+	margin-left: 5%;
+	width: 90%;
+	font-size: 16px;
+	color:#FFFFFF;
+	border: 0px solid #F18715;
+}
+#tanchu #tanchu_jp span{
+	color: #333;
+	font-size: 14px;
+}
+#tanchu > #tanchu_jp > ul{
+	display: block;
+	margin-left: 0%;
+	margin-top: 2%;
+}
+#tanchu > #tanchu_jp > ul > li{
+	margin-top: 3%;
+}
+
+#tanchu > #tanchu_jp > ul:last-child{
+	margin-left: 0%;
+	margin-top: 3%;
+}
+#tanchu > #tanchu_jp > ul:last-child > li{
+	margin-top: 3%;
+}
+#tanchu > #tanchu_jp > ul:last-child > li:last-child{
+	margin-top: 3%;
+}
+
+/*叉叉图片*/
+#chachatupian{
+	background: url(/h5/public/image/g3_b24.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;   		
+	top: 1%;
+	right: 5%;
+	width: 15%;
+	height: 15%;
+}  
+
+/*<!--三个界面的头像，玩法规则图片，遮罩层，从下往上弹起 ---------结束--->*/
+
+
+/*抽奖首页界面------第一个界面------*/
+
+/*中间的有奖大派送，开始抽奖图片隐藏掉*/
+#container_shouye{
+	/*display: none;*/
+}
+/*有奖大派送图片*/
+#container_shouye .youjiangtupian{
+	background-image: url(/h5/public/image/g4_002.png) ;
+	background-repeat:no-repeat;
+	background-size:99%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 70%;
+	
+}
+/*圆盘图片*/  	
+#container_shouye .yuanpan{
+	background-image: url(/h5/public/image/g4_b06.png) ;
+	background-repeat:no-repeat;
+	background-size:90%;
+	position: absolute;
+	top: 16%;
+	left: 15%;
+	width: 80%;
+	height: 60%;
+}
+/*开始抽奖图片*/
+#container_shouye div .btn1{
+	background-image: url(/h5/public/image/g4_05_1.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;
+	top: 26%;
+	left: 32%;
+	width: 38%;
+	height: 25%;
+}
+
+.bg1{
+	background: url(/h5/public/image/g4_05_1.png);
+}
+
+.bg2{
+	background: url(/h5/public/image/g4_05_2.png);
+}
+
+/*抽奖首页界面-----结束-------*/ 	
+
+/*中奖界面-----第二个界面-------*/ 	
+#container_zj{
+	display: none;
+}
+
+/*红包图片*/    	   	
+.zj_hongbao{
+	background-image: url(/h5/public/image/g4_06.png) ;
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;
+	top: 15%;
+	left: 13%;
+	width: 80%;
+	height: 80%;
+}
+/*确定按钮图片*/
+.zj_queding{
+	position: absolute;  
+	top: 68%;
+	left: 37%;	
+}
+
+.zj_queding_bg1{
+	background: url(/h5/public/image/g2_15.png) no-repeat;
+	background-size:100%;
+	width: 35%;
+	height: 16%;
+}
+
+.zj_queding_bg2{
+	background: url(/h5/public/image/g2_y48.png) no-repeat;
+	background-size:100%;
+	width: 30%;
+	height: 14%;
+}
+
+.zj_liji{
+	background: url(/h5/public/image/g2_17.png) no-repeat;
+	background-size:100%;
+	width: 35%;
+	height: 16%;
+	position: absolute;  
+	top: 68%;
+	left: 55%;	
+}
+
+.zj_cunru{
+	background: url(/h5/public/image/g2_18.png) no-repeat;
+	background-size:100%;
+	width: 35%;
+	height: 16%;
+	position: absolute;  
+	top: 68%;
+	left: 20%;	
+}
+
+#gxzj{
+	/*border:3px solid #000;*/
+	width:36%;
+	margin-top: 55%;
+	margin-left: 33%; 
+	font-size: 18px;  
+	font-weight:bold;
+	color:#f00; 		    		
+}
+
+/*中奖界面-----第二个界面------------结束-------*/ 	
+
+
+/*失败界面-----第三个界面-------*/ 
+#container_sb{
+	display: none;
+}
+/*红包图片*/    	   	
+.sb_hongbao{
+	background-image: url(/h5/public/image/g4_07.png) ;
+	background-repeat:no-repeat;
+	background-size:100%;
+	position: absolute;
+	top: 15%;
+	left: 13%;
+	width: 80%;
+	height: 80%;
+}
+/*确定按钮图片*/
+.sb_queding{
+	position: absolute;  
+	top: 68%;
+	left: 37%;	
+}
+
+.sb_queding_bg1{
+	background: url(/h5/public/image/g2_15.png) no-repeat;
+	background-size:100%;
+	width: 35%;
+	height: 16%;
+}
+
+.sb_queding_bg2{
+	background: url(/h5/public/image/g2_y48.png) no-repeat;
+	background-size:100%;
+	width: 30%;
+	height: 14%;
+}
+
+
+/*中奖界面-----第二个界面------------结束-------*/ 	

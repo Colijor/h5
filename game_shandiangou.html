@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>闪电购</title>
+
+    <link rel="stylesheet" type="text/css" href="/h5/public/css/base.css"/>
+
+    <link rel="stylesheet" type="text/css" href="/h5/public/css/game_shandiangou.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="/h5/public/css/progressJS.css"/>-->
+</head>
+
+<body>
+
+<div id="container_lp">
+
+    <!--显示余额和充值按钮-->
+
+    <div id="yue">
+        <img class="yueImg" src="/h5/public/image/yue.png">
+        <span class="yueSpan">余额：0元</span>
+        <a href="javascript:WebSocketTest('wxchongzhi');" id="wxchonhzhi">充值</a>
+    </div>
+
+    <!--中间按钮图片-->
+    <div class="zzsc-content">
+        <div class="progress-container" id="prog">
+            <div class="progress" style="height: 0%"></div>
+            <!--<div class="progress"></div>-->
+        </div>
+        <!--<img id="anniu" class="anniu" src="/h5/public/image/shandiangou/down.png" onclick="startGame();">-->
+        <input type="button" id="anniu" class="anniu">
+    </div>
+
+    <!--金币特效-->
+    <!--<div class="emoji-wrapper">-->
+    <!--<div id='emoji' class="emoji">-->
+    <!--<img style="width: 100px;height: 100px;" src="/h5/public/image/shandiangou/money.png">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="progress">-->
+    <!--<div id="pg">-->
+    <!--</div>-->
+    <!--</div>-->
+
+
+    <!--遮罩-->
+
+    <div id="fullbg"></div>
+
+    <!--弹出提示语-->
+
+    <div id="dialog">
+
+        <p>请看大屏幕提示</p>
+
+    </div>
+
+
+    <!--通知中奖-->
+    <div class="LotteryResults">
+        <div class="LotteryResult">
+            <div class="LotteryResult1">
+                <img id="tipImg" src="/h5/public/image/shandiangou/zjtishi.png"/>
+                <div class="LotteryResult2">
+                    <img class="wdjq" src="/h5/public/image/shandiangou/wdjq.png" onclick="wdjqFun();"/>
+                </div>
+            </div>
+            <div class="LotteryResult3"><img class="close" src="/h5/public/image/shandiangou/close.png" onclick="closeTip();"/></div>
+            <div class="LotteryResult4"><span class="lotteryTip">获得 </span></div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--轮盘首页界面-------------------------结束------------------------->
+<script src="/h5/public/js/jquery.min.js"></script>
+<!--common.js里面是放的苹果手机，安卓手机的适配样式-->
+<script src="/h5/public/js/common.js"></script>
+<script src="/h5/public/js/public.js"></script>
+<script src="/h5/public/js/public_login.js"></script>
+<script src="/h5/public/protobuf/protobuf.js"></script>
+<script src="/h5/public/js/game_shandiangou.js"></script>
+<script src="/h5/public/js/flexible.min.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+</body>
+
+</html>

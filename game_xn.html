@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->   
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/h5/public/css/base.css"/>	
+	<link rel="stylesheet" type="text/css" href="/h5/public/css/game_xn.css"/>	
+    <title>小鸟界面</title>
+    <script src="/h5/public/js/jquery.min.js"></script>
+	<!--common.js里面是放的苹果手机，安卓手机的适配样式-->
+	<script src="/h5/public/js/common.js"></script>
+    <script src="/h5/public/js/public.js"></script>
+    <script src="/h5/public/js/public_check_login.js"></script>
+    <script src="/h5/public/js/game_xn.js"></script>
+    
+</head>
+<body>
+	<div id="container_xn">
+		<!--头部区-->
+		<!--头像-->
+		<div class="touxiang">
+			<a href="/h5/personal_Center.html"><img src="/h5/public/image/u116.png"></a>
+			<span></span>
+			<span></span>
+		</div>
+						
+		<!--比赛记录-->		
+		<div id="main">
+			<a href="javascript:void(0);"><img src="/h5/public/image/g3_b10.png" id="bisaijilu"></a> 
+		</div>
+					    
+	    <!--连接着比赛记录弹起事件-->
+	    <div id="div1" >	        
+			<a href="javascript:void(0);"><img src="/h5/public/image/g3_02_1.png" id="tanqi"></a> 
+			<p class="close"><a href="javascript:void(0);" ><img src="/h5/public/image/g3_b24.png" id="chachatupian"></a></p>
+			<div id="bsjl_value">				
+			</div>
+	    </div>
+									
+		<!--游戏规则-->
+		<div><a href="javascript:void(0);" ><img src="/h5/public/image/g3_b11.png" class="youxiguize" onclick="showBg();"></a></div>
+		<!--遮罩-->
+		<div id="fullbg"></div> 
+		<div id="fullbg_main">
+			<!--比赛时间图片-->
+			<div id="fullbg_bssj"></div>
+			<!--这里显示小鸟的赔率-->
+			<div id="fullbg_pl"></div>
+			<!--这里显示投注的小鸟-->
+			<div id="fullbg_tzxn"></div>
+			<!--这里显示确定下注-->
+			<div id="fullbg_qdxz"></div>
+			<!--这里显示确定投注前可以取消选择的项目-->
+			<div id="fullbg_qxxz"></div>
+			<!--这里显示跳过-->
+			<div id="fullbg_tg" onclick="closeBg();"></div>
+		</div>					
+		<!--头部区结束-->
+		
+		<!--内容区-->
+		<!--第一个界面显示xn_content1-----开始-->
+		<div id="xn_content1">
+			<!--准备时间-->
+			<div id="zb_sj"></div>
+			<!--小猪图片-->
+			<div id="xiaozhu"></div>
+			<!--字体图片1-->
+			<div id="xn_content1_zhiti1"></div>
+			<!--倒计时字体-->
+			<span id="daojishi"></span>
+			<!--字体图片2-->
+			<div id="xn_content1_zhiti2"></div>
+			
+		</div>
+		<!--第一个界面显示xn_content1-----结束-->
+						
+		<!--第二个界面显示xn_content2-----开始-->
+		<div id="xn_content2">
+			<!--下一轮比赛时间-->
+			<div id="shijian"><span id="xn_content2_daojishi" >40</span></div>
+			<!--中间背景图片-->
+			<div id="zjbjtp">
+				<!--卢卡-->
+				<div id="luka"><span id="luka_value">0</span></div>
+				<div id="touzhu1"></div>
+				<!--大丽花-->
+				<div id="dalihua"><span id="dalihua_value">0</span></div>
+				<div id="touzhu2"></div>
+				<!--斯特拉-->
+				<div id="sitela"><span id="sitela_value">0</span></div>
+				<div id="touzhu3"></div>
+				<!--高富-->
+				<div id="gaofu"><span id="gaofu_value">0</span></div>
+				<div id="touzhu4"></div>
+				<!--波皮-->
+				<div id="bopi"><span id="bopi_value">0</span></div>
+				<div id="touzhu5"></div>
+				<!--薇露-->
+				<div id="weilu"><span id="weilu_value">0</span></div>
+				<div id="touzhu6"></div>
+			</div>	
+			<!--下面一个最大div-包括清零跟确定金币按钮-->
+			<div id="zuixia">
+				<!--清零按钮-->
+				<div id="qingling">
+					<a href="javascript:void(0);"><img src="/h5/public/image/g3_del.png" id="qingling1"> </a>
+				</div>
+				<!--确定金币按钮-->			
+				<a href="javascript:WebSocketTest();">
+					<img src="/h5/public/image/g3_ok.png" id="quedingtouzhu1"> 
+					<span id="count">0</span>
+				</a>								
+			</div>
+			<!--点击确定金币按钮的时候，显示结果的图片，并把清零按钮跟确定金币按钮给隐藏掉-->
+			<div id="jiesu"><span id="jieshu_jinbi">0</span></div>
+		</div>		
+		<!--第二个界面显示xn_content2-----结束-->
+		
+		<!--第三个个界面显示xn_content3-----开始-->
+		<div id="xn_content3">
+			<!--爆咋-->
+			<div class="baozha"></div>
+			<!--中间头像的图片-->
+			<div class="xuantu"></div>
+			<!--奖杯-->
+			<div class="jiangbei"></div>
+			<!--信息备注-->
+			<div class="beizhu">
+				<span class="beizhu_shui"></span>
+				<span id="beizhu_jinbi"></span>
+			</div>
+		</div>		
+		<!--第三个界面显示xn_content3-----结束-->
+		
+	</div>
+</body>
+</html>

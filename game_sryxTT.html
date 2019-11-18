@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/h5/public/css/base.css"/>	
+	<link rel="stylesheet" type="text/css" href="/h5/public/css/game_sryx.css"/>
+    <title>狼人杀游戏界面</title>
+	<script src="/h5/public/js/jquery.min.js"></script>
+	<!--common.js里面是放的苹果手机，安卓手机的适配样式-->
+	<script src="/h5/public/js/common.js"></script>
+	<script src="/h5/public/js/public.js"></script>
+	<script src="/h5/public/js/public_login_redis_sj.js"></script>
+	<script src="/h5/public/js/game_sryx_sj.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+</head>
+	<body>
+		<div class="sryxBody">
+		<!--规则-->
+		<div class="fgTitle">
+			<a href="javascript:void(0);"><img src="/h5/public/image/wolf/bt_guize.png" style="width: 120px; height: 95px; float: left;"></a>
+		</div>
+		<!--退出-->
+		<div class="fgTitleEsc">
+			<a href="javascript:void(0);"><img src="/h5/public/image/wolf/bt_tuichu.png" style="width: 120px; height: 95px; float: right;"></a>
+		</div>
+		<!--遮罩层-->
+	    <div id="fullbg"></div>
+	    
+	    <!--从下往上弹出-->
+	    <div id="tanchu" style="overflow-y:auto;">
+	    		<br/>游戏有三种身份：狼人，预言家，猎人，良民
+	    		<br/>一个法官，法官不参与游戏，只负责控制游戏的步骤和带动气氛。
+	    		<br/><span style="color: red;">狼人</span>：每晚都可以杀任意一位玩家，到白天就伪装，一是摆脱自己是狼人的嫌疑，二是扰乱别人的思路
+	    		<br/><span style="color: red;">预言家</span>：每晚都可以查看任意一个玩家的身份，查到狼人后，不要暴露自己的身份，引导大家找出狼人
+				<br/><span style="color: red;">猎人</span>：如果猎人被狼人或白天被投票出局后，可以带走任意一个玩家，也可以不带。带走的可能是狼人，也可能是好人，请慎重。
+				<br/><span style="color: red;">良民</span>：白天团结起来一起找出狼人。
+				<br/>好人赢的条件是：杀死所有狼人。好人阵营包含：猎人，预言家，良民
+				<br/>狼人赢的条件是：狼人存活人数≥好人的人数
+				<br/>玩法：
+				<br/>1、第一个人扫码加入游戏后成为法官，法官不参与游戏，只负责控制游戏的步骤，同时监督玩家执行命令，防止作弊。
+				<br/>2、其余玩家扫码加入游戏后，人数大于等于4人，最多20人。法官可以按开始游戏，否则人数不足无法开始。
+				<br/>3、法官按开始游戏后，开始分配身份，身份在手机端显示，请注意保密，防止他人发现。
+				<br/>4、第一轮天黑开始，玩家根据提示步骤执行，法官监督并记下每个人的身份，同时玩家相互认识一下同伴，待游戏第二轮开始法官给暗示。
+				<br/>5、天黑请闭眼，狼人请睁眼，同时相互认识一下同伴并开始寻找目标，指认其中一名玩家，法官记下狼人刚才想杀的目标，狼人确认杀的人后，狼人闭眼。
+				<br/>6、预言家请睁眼，预言家可以查看任意一个玩家，指认了玩家后，法官给出暗示，他是狼人，还是预言家，或者良民。预言家知道了结果，低调的引导大家找出狼人。然后预言家请闭眼
+				<br/>7、第二轮开始猎人是不用睁眼和闭眼的，只有被杀或者是出局后，可以选择是否带走一个人。白天和良民一起找出狼人
+				<br/>8、天亮了，法官告诉玩家，昨晚谁被狼人偷袭了，被偷袭玩家按出局按钮。
+				<br/>9、讨论环节，大家都有一个身份，尽量的隐藏自己的身份的同时也暗示一下自己站的立场，开始你们的配合！狼人就狡猾一点，隐藏自己的身份的同时，误导一下大家的思路，让他们冤枉好人，请开始你们的表演！
+				完整流程：
+				<br/>加入游戏，开始游戏，分配身份，第一轮：天黑请闭眼，狼人请睁眼，狼人请闭眼，预言家请睁眼，预言家请闭眼，猎人请睁眼，猎人请闭眼，天亮了，轮流发言。第一轮不杀人，主要是先亮一下身份给法官认识，以及认识一下同伴。第二轮：天黑请闭眼，狼人请睁眼，狼人想杀谁？狼人请闭眼，预言家请睁眼，预言家想查谁的身份？预言家请闭眼，天亮了，法官宣布昨晚夜里谁被杀了，被暗杀的人按出局，开始讨论，开始投票，票数最高的按出局。第3轮开始：按照第二轮方式循环，直到游戏告诉输赢的结果。
+				<br/>人数配置：
+				<br/><img width="100%" src="/h5/public/image/murder_gz.png">
+	    </div>
+			<!---------------游戏付费提醒---------开始--------->
+			<div class="payMoney pay1" style="display: none">
+				<div class="payInfo">
+					<img src="/h5/public/image/info.png" width="100%"  height="200">
+					<div class="infoText">
+						<p>游戏需要先付费，是否付费加入游戏？</p>
+						<p style="color: black;margin-top: 15px">本次付费0.01元</p>
+					</div>
+				</div>
+				<!--确定按钮-->
+				<div class="payBtn"><img src="/h5/public/image/wolf/ok.png" width="40%" id="payMoney"></div>
+				<br/>
+				<!--退出按钮-->
+				<div class="payBtn"><img src="/h5/public/image/bt_cj.png" width="40%"></div>
+			</div>
+			<!---------------游戏付费提醒---------结束--------->
+
+			<!---------------余额不足提醒---------开始--------->
+			<div class="payMoney pay2" style="display: none">
+				<div class="payInfo">
+					<img src="/h5/public/image/info.png" width="100%"  height="200">
+					<div class="infoText">
+						<p>余额不足！</p>
+						<p style="margin-top: 15px">请先充值！</p>
+					</div>
+				</div>
+				<!--确定按钮-->
+				<div class="payBtn"><img src="/h5/public/image/2.png" width="40%" id="toPay"></div>
+				<br/>
+				<!--退出按钮-->
+				<div class="payBtn"><img src="/h5/public/image/bt_cj.png" width="40%"></div>
+			</div>
+			<!---------------余额不足提醒---------结束--------->
+
+		<!--等待法官操作--------开始----->
+		<!--文字描述-->
+		<div class="dd_contanir">
+			<div class="ddnull"></div>
+			<!--文字描述-->
+			<div class="ddFont">
+				<img src="/h5/public/image/bg1.png" style="width: 100%; height: 100px;"> 
+			</div>
+		</div>
+		<!--等待法官操作--------结束----->
+
+		<!--法官端--------开始----->
+		<!--<div class="fg_contanir_1">-->
+			<!--&lt;!&ndash;开始游戏&ndash;&gt;-->
+			<!--<div class="fgAction">-->
+				<!--<a href="javascript:WebSocketTest('start');"><img src="/h5/public/image/bt_ksyx.png" style="width: 270px; height: 115px;"></a>-->
+			<!--&lt;!&ndash;退出&ndash;&gt;-->
+			<!--<div class="ssOut">-->
+				<!--<a href="javascript:WebSocketTest('again');"><img src="/h5/public/image/bg5.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--法官端--------结束----->
+
+		<!--法官端--------开始----->
+		<!--<div class="fg_contanir_2">-->
+			<!--&lt;!&ndash;开始游戏&ndash;&gt;-->
+			<!--<div class="fgAction">-->
+				<!--<a href="javascript:WebSocketTest('next');"><img src="/h5/public/image/lmbg2.png" id="murderF" style="width: 270px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;开始&ndash;&gt;-->
+			<!--<div class="ssOut">-->
+				<!--<a href="javascript:WebSocketTest('again');"><img src="/h5/public/image/bg5.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--法官端--------结束----->\
+		<!--法官端--------开始----->
+		<div class="fg_contanir_2">
+			<!--开始游戏-->
+			<div class="fgActionB" id="startGame">
+				<a href="javascript:WebSocketTest('next');"><img src="/h5/public/image/wolf/bt_ksyx.png" id="" style="width: 270px; height: 115px;"></a>
+			</div>
+			<!--下一步-->
+			<div class="fgActionB" id="next">
+				<a href="javascript:WebSocketTest('next');"><img src="/h5/public/image/wolf/bt_xyb.png" id="" style="width: 270px; height: 115px;"></a>
+			</div>
+			<!--人数不足-->
+			<div class="fgActionB" id="nopeople" style="display: none">
+				<a href="javascript:WebSocketTest('next');"><img src="/h5/public/image/wolf/nopeople.png" id="" style="width: 270px;"></a>
+			</div>
+			<!--法官身份-->
+			<div class="fgAction">
+				<a href="javascript:WebSocketTest('next');"><img src="/h5/public/image/wolf/judge.png" id="" style="width:100%; height: 115px;"></a>
+			</div>
+
+			<!--开始-->
+			<div class="ssOut">
+				<a href="javascript:WebSocketTest('again');"><img src="/h5/public/image/bg5.png" style="width:200px;"></a>
+			</div>
+		</div>
+		<!--法官端--------结束----->
+
+		<!--良民端--------开始----->
+		<div class="fg_contanir_3 people">
+			<!--良民身份-->
+			<div class="fgAction">
+				<a href="javascript:void(0);"><img src="/h5/public/image/wolf/pepole.png" id="murderType" ></a>
+			</div>
+			<!--出局-->
+			<div class="ssOut">
+				<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/out.png" style="width: 256px; height: 115px;"></a>
+			</div>
+			<!--再来一局-->
+			<div class="ssOut" style="display: none">
+				<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/comeAgain.png" style="width: 256px; height: 115px;"></a>
+			</div>
+			<!--游戏进行中等待下一局--->
+			<div class="remind" style="display: none">
+				<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/bg2.png"></a>
+			</div>
+			<!--很遗憾惜败--->
+			<div class="remind" style="display: none">
+				<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/bg2.png"></a>
+			</div>
+		</div>
+		<!--良民端--------结束----->
+
+		<!--猎人端--------开始----->
+		<!--<div class="hunter">-->
+			<!--&lt;!&ndash;良民身份&ndash;&gt;-->
+			<!--<div class="fgAction">-->
+				<!--<a href="javascript:void(0);"><img src="/h5/public/image/wolf/hunter.png" id="" ></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;出局&ndash;&gt;-->
+			<!--<div class="ssOut">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/out.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;再来一局&ndash;&gt;-->
+			<!--<div class="ssOut" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/comeAgain.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;游戏进行中等待下一局-&ndash;&gt;-->
+			<!--<div class="remind" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/bg2.png"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;很遗憾惜败-&ndash;&gt;-->
+			<!--<div class="remind" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/bg2.png"></a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--猎人端--------结束----->
+
+		<!--预言家端--------开始----->
+		<!--<div class="pre">-->
+			<!--&lt;!&ndash;良民身份&ndash;&gt;-->
+			<!--<div class="fgAction">-->
+				<!--<a href="javascript:void(0);"><img src="/h5/public/image/wolf/pre.png" id="" ></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;出局&ndash;&gt;-->
+			<!--<div class="ssOut">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/out.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;再来一局&ndash;&gt;-->
+			<!--<div class="ssOut" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/comeAgain.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;游戏进行中等待下一局-&ndash;&gt;-->
+			<!--<div class="remind" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/bg2.png"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;很遗憾惜败-&ndash;&gt;-->
+			<!--<div class="remind" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/bg2.png"></a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--预言家端--------结束----->
+
+
+		<!--狼人端--------开始----->
+		<!--<div class="wolf">-->
+			<!--&lt;!&ndash;良民身份&ndash;&gt;-->
+			<!--<div class="fgAction">-->
+				<!--<a href="javascript:void(0);"><img src="/h5/public/image/wolf/wolf.png" id="" ></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;出局&ndash;&gt;-->
+			<!--<div class="ssOut">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/out.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;再来一局&ndash;&gt;-->
+			<!--<div class="ssOut" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/comeAgain.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;游戏进行中等待下一局-&ndash;&gt;-->
+			<!--<div class="remind" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/bg2.png"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;很遗憾惜败-&ndash;&gt;-->
+			<!--<div class="remind" style="display: none">-->
+				<!--<a href="javascript:WebSocketTest('playerDie');"><img src="/h5/public/image/wolf/bg2.png"></a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--狼人端--------结束----->
+
+		<!--玩家端--------等待开始----->
+		<!--<div class="fg_contanir_4">-->
+			<!--&lt;!&ndash;等待游戏&ndash;&gt;-->
+			<!--<div class="fgAction">-->
+				<!--<a href="javascript:void(0);"><img src="/h5/public/image/bg2.png" id="murderType" style="width: 270px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;开始&ndash;&gt;-->
+			<!--<div class="ssOut">-->
+				<!--<a href="javascript:location.reload();"><img src="/h5/public/image/bg4.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--法官端--------分配身份结束----->
+
+		<!--警察端--------开始----->
+		<!--文字描述-->
+		<!--<div class="jc_contanir">-->
+			<!--<div class="jcnull"></div>-->
+			<!--&lt;!&ndash;文字描述&ndash;&gt;-->
+			<!--<div class="jcFont">-->
+				<!--<img src="/h5/public/image/bg1.png" style="width: 100%; height: 100px;"/> <span>杀手请闭眼</span>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;退出&ndash;&gt;-->
+			<!--<div class="jcOut">-->
+				<!--<a href="javascript:void(0);"><img src="/h5/public/image/bt_cj.png" style="width: 256px; height: 115px;"/></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;身份警察&ndash;&gt;-->
+			<!--<div class="jcJudge">-->
+				<!--<img src="/h5/public/image/jcbg2.png" style="width: 260px; height: 95px;">-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--警察端--------结束----->
+
+		<!--良民端--------开始----->
+		<!--文字描述-->
+		<!--<div class="lm_contanir">-->
+			<!--<div class="lmnull"></div>-->
+			<!--&lt;!&ndash;文字描述&ndash;&gt;-->
+			<!--<div class="lmFont">-->
+				<!--<img src="/h5/public/image/bg1.png"-->
+					<!--style="width: 100%; height: 100px;"> <span>杀手请睁眼</span>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;退出&ndash;&gt;-->
+			<!--<div class="lmOut">-->
+				<!--<a href="javascript:void(0);"><img-->
+					<!--src="/h5/public/image/bt_cj.png"-->
+					<!--style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;身份良民&ndash;&gt;-->
+			<!--<div class="lmJudge">-->
+				<!--<img src="/h5/public/image/lmbg2.png"-->
+					<!--style="width: 260px; height: 95px;">-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--良民端--------结束----->
+
+		<!--&lt;!&ndash;杀手端&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;开始-&#45;&#45;&ndash;&gt;-->
+		<!--&lt;!&ndash;文字描述&ndash;&gt;-->
+		<!--<div class="ss_contanir">-->
+			<!--<div class="ssnull"></div>-->
+			<!--&lt;!&ndash;文字描述&ndash;&gt;-->
+			<!--<div class="ssFont">-->
+				<!--<img src="/h5/public/image/bg1.png"-->
+					<!--style="width: 100%; height: 100px;"> <span>全员请闭眼</span>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;退出&ndash;&gt;-->
+			<!--<div class="ssOut">-->
+				<!--<a href="javascript:void(0);"><img src="/h5/public/image/bt_cj.png" style="width: 256px; height: 115px;"></a>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;身份杀手&ndash;&gt;-->
+			<!--<div class="ssJudge">-->
+				<!--<img src="/h5/public/image/ssbg2.png" style="width: 260px; height: 95px;">-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--&lt;!&ndash;杀手端&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;结束-&#45;&#45;&ndash;&gt;-->
+
+
+	</div>
+
+</body>
+</html>

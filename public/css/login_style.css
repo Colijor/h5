@@ -1,0 +1,122 @@
+.ui-page-login,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.mui-content{height: 100%;background-color: #FFFFFF;}
+
+.area {
+	margin: 20px auto 0px auto;
+}
+
+.mui-input-group {
+	margin-top: 10px;
+}
+
+.mui-input-group:first-child {
+	margin-top: 140px;
+}
+
+.mui-input-group label {
+	margin-left: 10px;
+	width: 30%;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	width: 60%;
+	float:left;
+}
+
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+	top: 6px;
+}
+
+.mui-content-padded {
+	margin-top: 25px;
+}
+
+.mui-btn {
+	padding: 10px;
+}
+
+.link-area {
+	display: block;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.spliter {
+	color: #bbb;
+	padding: 0px 8px;
+}
+
+.oauth-area {
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.oauth-area .oauth-btn {
+	display: inline-block;
+	width: 50px;height: 50px;
+	background-size: 30px 30px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 0px 20px;
+	border: solid 1px #ddd;
+	border-radius: 25px;
+}
+
+.oauth-area .oauth-btn:active {
+	border: solid 1px #aaa;
+}
+
+.oauth-area .oauth-btn.disabled {
+	background-color: #ddd;
+}
+.login_logo{
+	position: relative;width: 30%;height: 13%;left: 35%;top: 10%;
+}
+.weixin{
+	background: url(/h5/public/image/timg_0.jpg) no-repeat;
+	background-size:100% ;position: absolute;
+	width: 90%;height: 100%;left: 5%;top: 0%;
+}
+
+/*红点点图片*/
+.biaozhi{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	/*border: 1px solid #0062CC;*/
+}
+
+#login{	
+	width: 250px;height: 45px;left:15%;color: #FFFFFF;background-color: #ff4040;
+	border: solid 1px #ff4040;
+}
+
+#dl{color: #8F8F94;}
+
+#lj{font-size: 13px;color: #808080;}
+
+#forgetPassword{font-size: 13px;color: #808080;}
+
+.wei{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	/*border: 1px solid #0062CC;*/
+}
+.wei img{
+	margin-top: 20px;
+}
