@@ -218,16 +218,16 @@ function WebSocketInit() {
                         $(".LotteryResults").hide();
                     } else if (obj.type == 12) {
                         //alert("您已退出游戏，请重新扫码");
-                        ws = null;
+                        ws.close();
                         $("#dailog").show();
                         $(".dailogInfo").text("您已退出游戏，请重新扫码");//提示对话框测试
 
                     } else if (obj.type == 2) {
-                        ws = null;
+                        ws.close();
                         $("#dailog").show();
                         $(".dailogInfo").text("人数已满，请稍后连接");//提示对话框测试
                     } else if (obj.type == -4) {
-                        ws = null;
+                        ws.close();
                         $("#dailog").show();
                         $(".dailogInfo").text("游戏不在线");//提示对话框测试
                     }
